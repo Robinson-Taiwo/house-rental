@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700;800&display=swap');
+
+.Home {
+    @apply w-[100vw]
+}
+
+.home {
+    background: linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url(../assets/first-background.png);
+    @apply w-screen h-[65.83rem] bg-cover bg-center px-[10rem]
+}
+
+.logo {
+    @apply pt-[1.583rem]
+}
+
+.nav {
+    @apply flex flex-row justify-between
+}
+
+.links {
+    @apply pt-[4.16rem] flex flex-row mr-[38.83rem]
+}
+
+.link1 {
+    @apply pr-[6.17rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+}
+
+.link2 {
+    @apply pr-[4.66rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+}
+
+.link3 {
+    @apply pr-[4.75rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+}
+
+.link4 {
+    @apply pr-[6.17rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+}
+
+.line {
+    border: 0.5px solid #FFFFFF;
+    @apply w-[100%] h-[0rem] mt-[1.833rem]
+}
+
+.text {
+    @apply font-bold text-[4.33rem] leading-[5.833rem] capitalize tracking-[-0.08rem] mt-[16.67rem] text-white max-w-[48.67rem] flex-wrap
+}
+
+.header {
+    @apply flex flex-row justify-between pr-[2.67rem]
+}
+
+.mapp {
+    @apply mt-[6.67rem]
+}
+
+.map {
+    @apply w-[34rem] h-[28.33rem] mb-[1.75rem]
+}
+
+.inputs {
+    border: 0.083rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.833rem;
+    @apply bg-white flex flex-row w-[34rem] h-[7.33rem] justify-center items-center
+}
+
+#all {
+    background: #F9F9F9;
+    border: 0.083rem solid #E6E6E6;
+    border-radius: 0.416rem 0rem 0rem 0.416rem;
+    @apply w-[10.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+}
+
+#neighbour {
+    background: #F9F9F9;
+    border: 0.083rem solid #E6E6E6;
+    border-radius: 0.416rem 0rem 0rem 0.416rem;
+    @apply w-[14.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+}
+
+.search {
+    @apply w-[4.917rem] h-[4.83rem]
+}
+
+.trans {
+    @apply h-[67.417rem]
+}
+
+
+.mini {
+    font-family: 'Kumbh Sans', sans-serif;
+    @apply mt-[7.75rem] text-[3rem] leading-[5.33rem] font-extrabold capitalize text-[#18191F] ml-[10rem]
+}
+
+.line2 {
+    border: 0.25rem solid #F4511E;
+    @apply w-[32.083rem] ml-[10rem] h-[0rem] mb-[1.71rem]
+}
+
+.photo {
+    @apply h-[43.417rem] w-[32.25rem] ml-[6.917rem]
+}
+
+.columns {
+    @apply ml-[5.417rem] flex flex-col gap-[3.57rem] mt-[7.083rem]
+}
+
+.row {
+    @apply flex flex-row
+}
+
+.full {
+    @apply flex flex-row  pr-[5.083rem]
+}
+
+.row1 {
+    @apply pr-[7.3rem]
+}
+
+.row4 {
+    @apply pr-[4.91rem]
+}
+
+.row5 {
+    @apply pr-[8.67rem]
+}
+
+.rt1 {
+    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[13.25rem] h-[5.833rem]
+}
+
+.rt2 {
+    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[15.83rem] h-[5.833rem] mr-[6.42rem]
+}
+
+.rt3 {
+    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[24.42rem] h-[5.833rem]
+}
+
+.rt4 {
+    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[15.64rem] h-[5.833rem]
+}
+
+.rt5 {
+    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[13.58rem] h-[5.833rem]
+}
+
+.rt6 {
+    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[14.17rem] h-[5.833rem]
+}
+
+.square {
+    background: #FFFFFF;
+    box-shadow: 0rem 1rem 1.58rem rgba(0, 0, 0, 0.15);
+    border-radius: 0.833rem;
+    @apply h-[6.42rem] w-[6.42rem] flex justify-center items-center
+}
