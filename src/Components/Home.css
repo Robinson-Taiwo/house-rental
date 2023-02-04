@@ -98,7 +98,7 @@
 }
 
 .photo {
-    @apply  ml-[6.917rem]
+    @apply ml-[6.917rem]
 }
 
 .columns {
@@ -110,7 +110,7 @@
 }
 
 .full {
-    @apply flex flex-row  pr-[5.083rem]
+    @apply flex flex-row pr-[5.083rem]
 }
 
 .row1 {
@@ -154,4 +154,22 @@
     box-shadow: 0rem 1rem 1.58rem rgba(0, 0, 0, 0.15);
     border-radius: 0.833rem;
     @apply h-[6.42rem] w-[6.42rem] flex justify-center items-center
+}
+
+.lists {
+    @apply bg-[#F5F5F5] h-[128.17rem] px-[10.71rem]
+}
+
+.props {
+    @apply flex flex-row justify-between
+}
+
+.list {
+    @apply mt-[5.08rem] font-extrabold text-[3rem] leading-[5.33rem] capitalize
+}
+
+.orange {
+    box-shadow: 0px 20px 13px rgba(248, 90, 71, 0.035), 0rem 0.679rem 0.543rem rgba(248, 90, 71, 0.0274815), 0px 0.154rem 0.262rem rgba(248, 90, 71, 0.0168519);
+    border-radius: 0.417rem;
+    @apply mt-[5rem] bg-[#F4511E] w-[16.67rem] h-[5.417rem] flex justify-center items-center font-medium text-white text-[1.41rem] leading-[1.917rem]
 }

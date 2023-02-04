@@ -168,6 +168,18 @@ const Home = () => {
 
             </section>
 
+            <section className="lists">
+
+                <div className="props">
+                    <h2 className="list">list of properties</h2>
+
+                    <button className="orange">
+                        view all property
+                    </button>
+                </div>
+
+            </section>
+
         </div>
     )
 }
