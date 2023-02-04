@@ -98,7 +98,7 @@
 }
 
 .photo {
-    @apply h-[43.417rem] w-[32.25rem] ml-[6.917rem]
+    @apply  ml-[6.917rem]
 }
 
 .columns {
