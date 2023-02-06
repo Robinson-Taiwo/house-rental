@@ -1,0 +1,30 @@
+.card {
+
+    background: #FFFFFF;
+    box-shadow: 0rem 2.84rem 3.02rem rgba(0, 0, 0, 0.133714);
+    border-radius: 2.22rem;
+    @apply h-[43.42rem] w-[29.83rem]
+}
+
+.pict {
+    @apply w-[29.81] h-[23.6rem]
+}
+
+
+.card-text {
+    @apply w-[21.5rem] mt-[1.48rem] mb-[1.58rem] text-[1.917rem] leading-[2.5rem] ml-[2.25rem] font-bold
+}
+
+.private {
+    @apply text-[#818181] ml-[2.25rem]
+}
+
+.price {
+    @apply text-[#F4511E] font-bold text-[2.13rem] ml-[2.25rem] mb-[1.5rem]
+}
+
+.cardLine {
+    border: 1.042rem solid #FFFFFF;
+    background: #E4E4E4;
+    /* @apply  */
+}

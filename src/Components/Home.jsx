@@ -5,8 +5,10 @@ import map from "../assets/map.png"
 import second from "../assets/secomd-image.png"
 import search from "../assets/search.svg"
 import dollar from "../assets/dollar.svg"
-
+import data from './data'
 import "./Home.css"
+import HomeCard from './HomeCard'
+
 
 
 const Home = () => {
@@ -176,6 +178,17 @@ const Home = () => {
                     <button className="orange">
                         view all property
                     </button>
+                </div>
+
+
+                <div className="tub">
+                    {
+                        data.map((item, index) => {
+                            return (
+                                <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
+                            )
+                        })
+                    }
                 </div>
 
             </section>

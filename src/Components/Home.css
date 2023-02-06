@@ -173,3 +173,9 @@
     border-radius: 0.417rem;
     @apply mt-[5rem] bg-[#F4511E] w-[16.67rem] h-[5.417rem] flex justify-center items-center font-medium text-white text-[1.41rem] leading-[1.917rem]
 }
+
+.tub {
+    grid-template-columns: repeat(3, 1fr);
+    @apply grid gap-x-[2.77rem] mt-[5.75rem] gap-y-[5.08rem] 
+
+}
