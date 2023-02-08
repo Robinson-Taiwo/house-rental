@@ -1,6 +1,11 @@
 import React from 'react'
 import "./HomeCard.css"
-// import map from "../assets/map.png"
+import bed from "../assets/Bed.svg"
+import desk from "../assets/desk.svg"
+import ladder from "../assets/ladder.svg"
+
+
+
 
 const HomeCard = (props) => {
     return (
@@ -11,7 +16,7 @@ const HomeCard = (props) => {
             </p>
 
             <p className="private">
-                private room
+                private Room
             </p>
 
             <p className="price">
@@ -19,6 +24,25 @@ const HomeCard = (props) => {
             </p>
 
             <div className="cardLine"></div>
+
+            <div className="down">
+                <div className="bed">
+                    <img src={bed} className="ic" alt="" /> <span className='four' >4</span>
+                </div>
+
+                <div className="hline"></div>
+
+                <div className="desk">
+                    <img src={desk} className="ic" alt="" /> <span className='four'>4</span>
+                </div>
+
+                <div className="hline"></div>
+
+
+                <div className="lad">
+                    <img src={ladder} className="ic" alt="" /> <span className='four' >4</span>
+                </div>
+            </div>
 
         </div>
     )

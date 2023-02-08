@@ -3,20 +3,22 @@
     background: #FFFFFF;
     box-shadow: 0rem 2.84rem 3.02rem rgba(0, 0, 0, 0.133714);
     border-radius: 2.22rem;
-    @apply h-[43.42rem] w-[29.83rem]
+    @apply h-[45.42rem] w-[29.83rem]
 }
 
 .pict {
-    @apply w-[29.81] h-[23.6rem]
+    /* border-top: 2.22rem; */
+
+    @apply w-[29.81rem] h-[23.6rem]
 }
 
 
 .card-text {
-    @apply w-[21.5rem] mt-[1.48rem] mb-[1.58rem] text-[1.917rem] leading-[2.5rem] ml-[2.25rem] font-bold
+    @apply w-[23.75rem] mt-[1.48rem] mb-[1.58rem] text-[1.917rem] leading-[2.5rem] ml-[2.25rem] font-bold h-[5rem]
 }
 
 .private {
-    @apply text-[#818181] ml-[2.25rem]
+    @apply text-[#818181] ml-[2.25rem] text-[1.5rem] font-normal mb-[0.25rem]
 }
 
 .price {
@@ -26,5 +28,33 @@
 .cardLine {
     border: 1.042rem solid #FFFFFF;
     background: #E4E4E4;
-    /* @apply  */
+}
+
+.down {
+    @apply flex flex-row
+}
+
+.bed {
+    @apply flex flex-row w-[9.94rem] justify-center h-[5.32rem] items-center
+}
+
+.lad {
+    @apply flex flex-row w-[9.78rem] justify-center h-[5.32rem] items-center
+}
+
+.desk {
+    @apply flex flex-row w-[9.94rem] justify-center h-[5.32rem] items-center
+}
+
+.ic {
+    @apply h-[0.95rem] w-[1.24rem]
+}
+
+.four {
+    @apply text-[1.51rem] font-bold leading-[2rem]
+}
+
+.hline {
+    border: 0.088rem solid #E4E4E4;
+    @apply flex items-start mt-[-1rem] h-[5.23rem] w-[0rem]
 }
