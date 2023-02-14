@@ -7,8 +7,15 @@ import search from "../assets/search.svg"
 import dollar from "../assets/dollar.svg"
 import quote from "../assets/quote.svg"
 import play from "../assets/play.svg"
+import location from "../assets/location.svg"
 import data from './data'
 import "./Home.css"
+import phone from "../assets/phone.svg"
+import fax from "../assets/fax.svg"
+import youtube from "../assets/youtube.svg"
+import twitter from "../assets/Twitter.svg"
+import pinterest from "../assets/Pinterest.svg"
+
 import HomeCard from './HomeCard'
 
 
@@ -381,6 +388,36 @@ const Home = () => {
                     <img src={logo} className="logo2" alt="" />
 
                     <div className="rest">
+                        <div className="drive">
+                            <div className="drive-state"> <img src={location} alt="" /> <span>345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</span> </div>
+                        </div>
+
+                        <div className="rest-second">
+
+                            <div className="call">
+                                <div className="call-state"> <img src={phone} alt="" /> <span>(123) 456-7890</span> </div>
+                            </div>
+
+                            <div className="fax">
+                                <div className="fax-state"> <img src={fax} alt="" /> <span>(123) 456-7890</span> </div>
+                            </div>
+
+                        </div>
+
+                        <div className="media">
+                            <div className="sot">social media</div>
+
+                            <img src={fax} alt="" className="social-icon" />
+                            <img src={twitter} alt="" className="social-icon" />
+                            <img src={youtube} alt="" className="social-icon" />
+                            <img src={pinterest} alt="" className="social-icon" />
+                            <img src={fax} alt="" className="social-icon" />
+                            <img src={fax} alt="" className="social-icon" />
+                            <img src={fax} alt="" className="social-icon" />
+                            <img src={fax} alt="" className="social-icon" />
+
+                        </div>
+
 
                     </div>
 

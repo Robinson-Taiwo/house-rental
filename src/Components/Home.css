@@ -14,7 +14,7 @@
 }
 
 .logo {
-    @apply pt-[1.583rem] sm:flex sm:justify-center
+    @apply pt-[1.583rem]
 }
 
 .nav {
@@ -22,7 +22,7 @@
 }
 
 .links {
-    @apply pt-[4.16rem] sm:flex flex-row mr-[38.83rem] hidden
+    @apply pt-[4.16rem] flex flex-row mr-[38.83rem]
 }
 
 .link1 {
@@ -47,11 +47,11 @@
 }
 
 .text {
-    @apply font-bold sm:text-[4.33rem] text-[2.33rem] leading-[2.5rem] sm:leading-[5.833rem] capitalize tracking-[-0.08rem] mt-[16.67rem] text-white sm:max-w-[48.67rem] flex-wrap max-w-[24.67rem]
+    @apply font-bold text-[4.33rem] leading-[5.833rem] capitalize tracking-[-0.08rem] mt-[16.67rem] text-white max-w-[48.67rem] flex-wrap
 }
 
 .header {
-    @apply flex flex-col justify-between pr-[2.67rem] sm:flex-row
+    @apply flex justify-between pr-[2.67rem] flex-row
 }
 
 .mapp {
@@ -98,7 +98,7 @@
 
 .line2 {
     border: 0.25rem solid #F4511E;
-    @apply w-[16.083rem] ml-[10rem] h-[0rem] mb-[1.71rem] sm:w-[32.083rem]
+    @apply ml-[10rem] h-[0rem] mb-[1.71rem] w-[32.083rem]
 }
 
 .photo {
@@ -110,11 +110,11 @@
 }
 
 .row {
-    @apply flex flex-col sm:flex-row
+    @apply flex flex-row
 }
 
 .full {
-    @apply flex flex-col pr-[5.083rem] sm:flex-row
+    @apply flex pr-[5.083rem] flex-row
 }
 
 .row1 {
@@ -180,11 +180,11 @@
 
 .tub {
     /* grid-template-columns: repeat(3, 1fr); */
-    @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[5.08rem] grid grid-cols-1 gap-4 sm:grid-cols-3 mb-[7rem]
+    @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[5.08rem] grid gap-4 grid-cols-3 mb-[7rem]
 }
 
 .switch {
-    @apply flex justify-center 
+    @apply flex justify-center
 }
 
 .pages {
@@ -216,181 +216,392 @@
     @apply h-[6.17rem] w-[7.25rem] bg-[#F3F3F3] flex justify-center items-center font-bold text-[#F4511E] text-[1.33rem] leading-[2rem]
 }
 
-.foot{
-    @apply h-[173.25rem] ml-[12.92rem] 
+.foot {
+    @apply h-[173.25rem] ml-[12.92rem]
 }
 
-.hap1{
-        background-image: url(../assets/leases.png);
-    @apply h-[27.8rem] w-[20.8rem] bg-cover bg-center bg-no-repeat pt-[2.5rem]  font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[3rem] text-center
+.hap1 {
+    background-image: url(../assets/leases.png);
+    @apply h-[27.8rem] w-[20.8rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[3rem] text-center
 }
 
-.hap2{
+.hap2 {
     background-image: url(../assets/happiness.png);
-    @apply h-[22.5rem] w-[22.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem]  font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff]  pl-[2rem] text-center
+    @apply h-[22.5rem] w-[22.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[2rem] text-center
 }
 
-.hap3{
+.hap3 {
     background-image: url(../assets/cleaning.png);
-    @apply h-[23.75rem] w-[17.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem]  font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[1.5rem] text-center
+    @apply h-[23.75rem] w-[17.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[1.5rem] text-center
 }
 
-.hap4{
+.hap4 {
     background-image: url(../assets/roomate.png);
-    @apply h-[29.67rem] w-[28.17rem] bg-cover bg-center bg-no-repeat pt-[2.5rem]  font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[4.42rem]
+    @apply h-[29.67rem] w-[28.17rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[4.42rem]
 }
 
-.clean{
+.clean {
     @apply w-[47rem] flex flex-col gap-[1.67rem] mt-[9.17rem]
 }
 
-.hapy{
+.hapy {
     @apply flex flex-row gap-[1.67rem] items-end
 }
 
-.hapx{
+.hapx {
     @apply flex flex-row gap-[1.67rem]
 }
 
-.hap4t{
+.hap4t {
     @apply w-[16.58rem]
 }
 
-.search{
+.search {
     @apply w-[50rem] mt-[22.63rem]
-} 
+}
 
-.foot1{
+.foot1 {
     @apply flex flex-row gap-[5.67rem] mr-[16.97rem]
 }
 
-.lifestyle{
-    @apply font-extrabold text-[3.33rem] leading-[4.5rem] w-[37rem] mb-[1.33rem] 
+.lifestyle {
+    @apply font-extrabold text-[3.33rem] leading-[4.5rem] w-[37rem] mb-[1.33rem]
 }
 
-.desire{
+.desire {
     @apply w-[37rem] font-normal text-[1.5rem] leading-[2.67rem] mb-[3.33rem]
 }
 
-.rooms{
-    @apply bg-[#F4511E] w-[15.42rem] h-[5.25rem] flex justify-center items-center rounded-[1.08rem] text-white
- font-semibold text-[1.5rem] leading-[1.67rem]
+.rooms {
+    @apply bg-[#F4511E] w-[15.42rem] h-[5.25rem] flex justify-center items-center rounded-[1.08rem] text-white font-semibold text-[1.5rem] leading-[1.67rem]
 }
 
-.confi{
+.confi {
     @apply mt-[9.17rem] w-[72.1rem] font-medium leading-[2.66rem] text-[2rem]
- }
+}
 
- .confident{
+.confident {
     @apply flex justify-center mb-[3.78rem]
- }
+}
 
- .add{
-    @apply flex justify-center 
- }
+.add {
+    @apply flex justify-center
+}
 
- .new{
+.new {
     background: #FFFFFF;
     box-shadow: 0rem 0.25rem 5.25rem rgba(0, 0, 0, 0.15);
     border-radius: 0.83rem;
- @apply w-[91.17rem] h-[85.83rem] flex flex-col items-center mb-[9.17rem]
- }
+    @apply w-[91.17rem] h-[85.83rem] flex flex-col items-center mb-[9.17rem]
+}
 
- .new-header{
+.new-header {
     @apply text-[#F4511E] text-[2.33rem] font-bold leading-[2.67rem] mt-[3.75rem] mb-[5.5rem]
- }
+}
 
- .details{
+.details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     @apply gap-x-[2.08rem] gap-y-[2.083rem] mb-[2.08rem]
- }
+}
 
- .tops{
+.tops {
     background: #F9F9F9;
-border: 0.083rem solid #E6E6E6;
-border-radius: 0.42rem;
+    border: 0.083rem solid #E6E6E6;
+    border-radius: 0.42rem;
     @apply w-[26.5rem] h-[4.17rem] pl-[1.75rem] font-normal text-[1.17rem] leading-[2.33rem]
- }
+}
 
- #tops{
+#tops {
     background: #F9F9F9;
     border: 0.083rem solid #E6E6E6;
     border-radius: 0.42rem;
     @apply w-[26.5rem] h-[4.17rem] pl-[1.75rem]
- }
+}
 
- .topi{
+.topi {
     @apply flex flex-col gap-[0.417rem]
- }
+}
 
- .asterik{
+.asterik {
     @apply text-[#F4511E]
- }
+}
 
- .topih{
-    @apply  font-semibold text-[1.42rem] leading-[2rem]
- }
+.topih {
+    @apply font-semibold text-[1.42rem] leading-[2rem]
+}
 
- .topd{
+.topd {
     background: #F9F9F9;
     border: 0.083rem solid #E6E6E6;
     border-radius: 0.42rem;
-    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem] 
- }
+    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem]
+}
 
- .topt{
+.topt {
     background: #F9F9F9;
     border: 0.083rem solid #F4511E;
-    border-style:dashed;
+    border-style: dashed;
     border-radius: 0.42rem;
-    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem] flex justify-center 
- }
+    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem] flex justify-center
+}
 
- .topio{
+.topio {
     @apply flex flex-col gap-[0.417rem] mt-[2.083rem] mb-[4.58rem]
- }
+}
 
- .but-o{
-    @apply bg-[#F4511E] rounded-[0.76rem] w-[42.75rem] h-[5.75rem] flex justify-center text-white items-center font-medium leading-[2.08rem] text-[1.82rem] 
- }
+.but-o {
+    @apply bg-[#F4511E] rounded-[0.76rem] w-[42.75rem] h-[5.75rem] flex justify-center text-white items-center font-medium leading-[2.08rem] text-[1.82rem]
+}
 
- .quote{
+.quote {
     background: rgba(244, 81, 30, 0.07);
 
-    @apply h-[49.67rem] flex flex-row  mb-[9.17rem]
- }
+    @apply h-[49.67rem] flex flex-row mb-[9.17rem]
+}
 
- .lorem{
-    @apply  flex flex-col
- }
+.lorem {
+    @apply flex flex-col
+}
 
- .youtube{
+.youtube {
     background-image: url(../assets/youtube.png);
-    @apply w-[44.83rem] h-[49.17rem] ml-[102.33rem] bg-cover bg-center bg-no-repeat flex items-center justify-center
- }
+    @apply w-[100.83rem] h-[49.17rem] ml-[102.33rem] bg-cover bg-center bg-no-repeat flex items-center justify-center
+}
 
- .punct{
+.punct {
     @apply mt-[8.17rem] ml-[6.67rem] w-[5.89rem] h-[5rem]
- }
+}
 
- .ipsum{
+.ipsum {
     @apply w-[52.92rem] ml-[10.75rem] font-normal text-[1.75rem] leading-[3rem] absolute mt-[10.83rem]
- }
+}
 
- .footer{
-    @apply h-[45.25rem]  flex items-center flex-col
- }
+.footer {
+    @apply h-[45.25rem] flex items-center flex-col
+}
 
- .line3{
+.line3 {
     background: #F4511E;
-    @apply w-[104.83rem] h-[0.17rem] 
- }  
+    @apply w-[104.83rem] h-[0.17rem]
+}
 
- .footer2{
-    @apply flex flex-row
- }
+.footer2 {
+    @apply flex flex-row gap-[31rem]
+}
 
- .logo2{
-    @apply bg-[#d1aa9d]
- }
+.logo2 {
+    @apply bg-[#F4511E] mt-[8.58rem] h-[8rem]
+}
+
+.drive-state {
+    @apply flex flex-row gap-[1.75rem] font-normal text-[1.16rem] leading-[1.5rem]
+}
+
+.drive {
+    @apply mt-[7.75rem]
+}
+
+.rest-second {
+    @apply flex flex-row gap-[10.16rem] mt-[1.833rem]
+}
+
+.call-state {
+    @apply flex flex-row gap-[1.75rem] font-normal text-[1.16rem] leading-[1.5rem]
+}
+
+.fax-state {
+    @apply flex flex-row gap-[1.75rem] font-normal text-[1.16rem] leading-[1.5rem]
+}
+
+.media {
+    @apply flex flex-row gap-[2.5rem] mt-[4rem]
+}
+
+.sot {
+    opacity: 0.5;
+    mix-blend-mode: normal;
+    @apply font-normal text-[1rem] leading-[1.5rem] text-[#0A142F]
+}
+
+
+
+
+/* CSS for mobile devices */
+@media (max-width: 767px) {
+    .Home {
+        @apply w-[100vw]
+    }
+
+    .Home {
+        @apply w-[100vw]
+    }
+
+    .home {
+        background: linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url(../assets/first-background.png);
+        /* background-image: url(../assets/cleaning.png); */
+        @apply max-w-[63.91rem] h-[65.83rem] bg-cover bg-center px-[2rem]
+    }
+
+    .logo {
+        @apply pt-[1.583rem] pl-[9rem]
+    }
+
+    .nav {
+        @apply flex flex-row justify-between
+    }
+
+    .links {
+        @apply pt-[4.16rem] flex flex-row mr-[38.83rem] hidden
+    }
+
+    .link1 {
+        @apply pr-[6.17rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+    }
+
+    .link2 {
+        @apply pr-[4.66rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+    }
+
+    .link3 {
+        @apply pr-[4.75rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+    }
+
+    .link4 {
+        @apply pr-[6.17rem] text-[#ffffff] font-normal text-[1.5rem] leading-[5.83%]
+    }
+
+    .line {
+        border: 0.5px solid #FFFFFF;
+        @apply w-[100%] h-[0rem] mt-[1.833rem] hidden
+    }
+
+
+    .header {
+        @apply flex justify-between pr-[2.67rem] flex-col
+    }
+    
+    .mapp {
+        @apply mt-[6.67rem] flex flex-col-reverse
+    }
+    
+    .map {
+        @apply w-[34rem] h-[28.33rem] mb-[1.75rem]
+    }
+
+    .text {
+        @apply font-bold text-[2.33rem] leading-[2.833rem] capitalize tracking-[-0.08rem] mt-[8.67rem] text-white w-[30.67rem] flex-wrap
+    }
+    
+    .inputs {
+        border: 0.083rem solid rgba(0, 0, 0, 0.2);
+        border-radius: 0.833rem;
+        @apply bg-white flex flex-row w-[25rem] h-[7.33rem] justify-center items-center
+    }
+    
+    #all {
+        background: #F9F9F9;
+        border: 0.083rem solid #E6E6E6;
+        border-radius: 0.416rem 0rem 0rem 0.416rem;
+        @apply w-[7.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+    }
+    
+    #neighbour {
+        background: #F9F9F9;
+        border: 0.083rem solid #E6E6E6;
+        border-radius: 0.416rem 0rem 0rem 0.416rem;
+        @apply w-[10.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+    }
+    
+    .search1 {
+        @apply w-[4.917rem] h-[4.83rem]
+    }
+    
+    .trans {
+        @apply h-[67.417rem]
+    }
+    
+    
+    .mini {
+        font-family: 'Kumbh Sans', sans-serif;
+        @apply mt-[7.75rem] text-[3rem] leading-[5.33rem] font-extrabold capitalize text-[#18191F] ml-[10rem]
+    }
+    
+    .line2 {
+        border: 0.25rem solid #F4511E;
+        @apply ml-[10rem] h-[0rem] mb-[1.71rem] w-[32.083rem]
+    }
+    
+    .photo {
+        @apply ml-[6.917rem]
+    }
+    
+    .columns {
+        @apply ml-[5.417rem] flex flex-col gap-[3.57rem] mt-[7.083rem]
+    }
+    
+    .row {
+        @apply flex flex-row
+    }
+
+
+
+
+
+    .foot {
+        @apply h-[173.25rem] ml-[1.92rem]
+    }
+    
+    .hap1 {
+        background-image: url(../assets/leases.png);
+        @apply h-[20.8rem] w-[15.8rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[3rem] text-center
+    }
+    
+    .hap2 {
+        background-image: url(../assets/happiness.png);
+        @apply h-[15.5rem] w-[15.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[2rem] text-center
+    }
+    
+    .hap3 {
+        background-image: url(../assets/cleaning.png);
+        @apply h-[15.75rem] w-[11.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[1.5rem] text-center
+    }
+    
+    .hap4 {
+        background-image: url(../assets/roomate.png);
+        @apply h-[22.67rem] w-[17.17rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[4.42rem] rounded-sm
+    }
+    
+    .clean {
+        @apply w-[47rem] flex flex-col gap-[1.67rem] mt-[9.17rem]
+    }
+    
+    .hapy {
+        @apply flex flex-row gap-[0.67rem] items-end
+    }
+    
+    .hapx {
+        @apply flex flex-row gap-[0.67rem]
+    }
+    
+    .hap4t {
+        @apply w-[16.58rem]
+    }
+    
+    .search {
+        @apply w-[50rem] mt-[22.63rem]
+    }
+    
+    .foot1 {
+        @apply flex flex-col gap-[5.67rem] mr-[16.97rem]
+    }
+    
+    .lifestyle {
+        @apply font-extrabold text-[3.33rem] leading-[4.5rem] w-[37rem] mb-[1.33rem]
+    }
+    
+    .desire {
+        @apply w-[37rem] font-normal text-[1.5rem] leading-[2.67rem] mb-[3.33rem]
+    }
+    
+}
