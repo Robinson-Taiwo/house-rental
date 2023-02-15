@@ -424,8 +424,30 @@
     @apply font-normal text-[1rem] leading-[1.5rem] text-[#0A142F]
 }
 
+.line4 {
+    background: #7BB9FC;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    @apply w-[85.9rem] h-[0.083rem] mt-[6.92rem]
+}
 
+.last-footer {
+    @apply flex flex-row gap-[15rem] mt-[2rem]
+}
 
+.last {
+    @apply flex flex-row gap-[5rem]
+}
+
+.last1 {
+    @apply text-[#0A142F] font-normal text-[1.17rem] leading-[1.42rem]
+}
+
+.last-second {
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    @apply text-[#0A142F] font-normal text-[1.17rem] leading-[1.42rem]
+}
 
 /* CSS for mobile devices */
 @media (max-width: 767px) {
@@ -480,11 +502,11 @@
     .header {
         @apply flex justify-between pr-[2.67rem] flex-col
     }
-    
+
     .mapp {
         @apply mt-[6.67rem] flex flex-col-reverse
     }
-    
+
     .map {
         @apply w-[34rem] h-[28.33rem] mb-[1.75rem]
     }
@@ -492,54 +514,54 @@
     .text {
         @apply font-bold text-[2.33rem] leading-[2.833rem] capitalize tracking-[-0.08rem] mt-[8.67rem] text-white w-[30.67rem] flex-wrap
     }
-    
+
     .inputs {
         border: 0.083rem solid rgba(0, 0, 0, 0.2);
         border-radius: 0.833rem;
         @apply bg-white flex flex-row w-[25rem] h-[7.33rem] justify-center items-center
     }
-    
+
     #all {
         background: #F9F9F9;
         border: 0.083rem solid #E6E6E6;
         border-radius: 0.416rem 0rem 0rem 0.416rem;
         @apply w-[7.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
     }
-    
+
     #neighbour {
         background: #F9F9F9;
         border: 0.083rem solid #E6E6E6;
         border-radius: 0.416rem 0rem 0rem 0.416rem;
         @apply w-[10.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
     }
-    
+
     .search1 {
         @apply w-[4.917rem] h-[4.83rem]
     }
-    
+
     .trans {
         @apply h-[67.417rem]
     }
-    
-    
+
+
     .mini {
         font-family: 'Kumbh Sans', sans-serif;
         @apply mt-[7.75rem] text-[3rem] leading-[5.33rem] font-extrabold capitalize text-[#18191F] ml-[10rem]
     }
-    
+
     .line2 {
         border: 0.25rem solid #F4511E;
         @apply ml-[10rem] h-[0rem] mb-[1.71rem] w-[32.083rem]
     }
-    
+
     .photo {
         @apply ml-[6.917rem]
     }
-    
+
     .columns {
         @apply ml-[5.417rem] flex flex-col gap-[3.57rem] mt-[7.083rem]
     }
-    
+
     .row {
         @apply flex flex-row
     }
@@ -551,57 +573,57 @@
     .foot {
         @apply h-[173.25rem] ml-[1.92rem]
     }
-    
+
     .hap1 {
         background-image: url(../assets/leases.png);
         @apply h-[20.8rem] w-[15.8rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[3rem] text-center
     }
-    
+
     .hap2 {
         background-image: url(../assets/happiness.png);
         @apply h-[15.5rem] w-[15.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[2rem] text-center
     }
-    
+
     .hap3 {
         background-image: url(../assets/cleaning.png);
         @apply h-[15.75rem] w-[11.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[1.5rem] text-center
     }
-    
+
     .hap4 {
         background-image: url(../assets/roomate.png);
         @apply h-[22.67rem] w-[17.17rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[4.42rem] rounded-sm
     }
-    
+
     .clean {
         @apply w-[47rem] flex flex-col gap-[1.67rem] mt-[9.17rem]
     }
-    
+
     .hapy {
         @apply flex flex-row gap-[0.67rem] items-end
     }
-    
+
     .hapx {
         @apply flex flex-row gap-[0.67rem]
     }
-    
+
     .hap4t {
         @apply w-[16.58rem]
     }
-    
+
     .search {
         @apply w-[50rem] mt-[22.63rem]
     }
-    
+
     .foot1 {
         @apply flex flex-col gap-[5.67rem] mr-[16.97rem]
     }
-    
+
     .lifestyle {
         @apply font-extrabold text-[3.33rem] leading-[4.5rem] w-[37rem] mb-[1.33rem]
     }
-    
+
     .desire {
         @apply w-[37rem] font-normal text-[1.5rem] leading-[2.67rem] mb-[3.33rem]
     }
-    
+
 }

@@ -422,6 +422,25 @@ const Home = () => {
                     </div>
 
                 </div>
+
+                <div className="line4"></div>
+
+
+                <div className="last-footer">
+                    <div className="last">
+                        <div className="last1"> ABOUT US</div>
+                        <div className="last2">CONTACT US </div>
+                        <div className="last3">HELP</div>
+                        <div className="last4">PRIVACY POLICY</div>
+                        <div className="last5">DISCLAIMER</div>
+
+                    </div>
+
+                    <div className="last-second">
+                        Copyright © 2020 Minimumlivingcost. All rights reserved
+                    </div>     
+                </div>
+
             </div>
 
         </div>
