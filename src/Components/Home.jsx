@@ -15,12 +15,14 @@ import fax from "../assets/fax.svg"
 import youtube from "../assets/youtube.svg"
 import twitter from "../assets/Twitter.svg"
 import pinterest from "../assets/Pinterest.svg"
-
 import HomeCard from './HomeCard'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Home = () => {
+    AOS.init({ duration: 2000 });
+
     return (
         <div className='Home'>
             <section className="home">
@@ -90,9 +92,9 @@ const Home = () => {
                 <div className="line2"></div>
 
                 <section className="full">
-                    <img src={second} className='photo' alt="" />
+                    <img data-aos="fade-down" src={second} className='photo' alt="" />
 
-                    <div className="columns">
+                    <div data-aos="fade-up" className="columns">
 
                         <div className="row">
                             <div className="row1">
@@ -102,7 +104,7 @@ const Home = () => {
                                 </div>
 
 
-                                <p className="rt1">
+                                <p data-aos="zoom-in" className="rt1">
                                     Pay as Little
                                     as possible!
                                 </p>
@@ -114,7 +116,7 @@ const Home = () => {
                                     <img src={dollar} alt="" />
                                 </div>
 
-                                <p className="rt2">
+                                <p data-aos="zoom-in" className="rt2">
                                     Enjoy wisdom
                                     of community!
                                 </p>
@@ -126,7 +128,7 @@ const Home = () => {
                                     <img src={dollar} alt="" />
                                 </div>
 
-                                <p className="rt3">
+                                <p data-aos="zoom-in" className="rt3">
                                     Let's somebody else
                                     take care of Landlord!
                                 </p>
@@ -141,7 +143,7 @@ const Home = () => {
 
                                 </div>
 
-                                <p className="rt4">
+                                <p data-aos="zoom-in" className="rt4">
                                     Enjoy peaceful
                                     Environment!
                                 </p>
@@ -152,7 +154,7 @@ const Home = () => {
                                     <img src={dollar} alt="" />
                                 </div>
 
-                                <p className="rt5">
+                                <p data-aos="zoom-in" className="rt5">
                                     Stay Safe!
                                     Save Money!
                                 </p>
@@ -164,7 +166,7 @@ const Home = () => {
                                 </div>
 
 
-                                <p className="rt6">
+                                <p data-aos="zoom-in" className="rt6">
                                     Pay for what
                                     you use !
                                 </p>
@@ -344,12 +346,22 @@ const Home = () => {
                         </div>
                         <div className="topi">
                             <p className="topih">Description <span className='asterik' >*</span> </p>
-                            <input type="text" className="topd" placeholder='Enter Name' />
+                            <textarea type="text" className="topd" placeholder='Enter Description ' />
                         </div>
 
                         <div className="topio">
                             <p className="topih">Upload Photos <span className='asterik' >*</span> </p>
-                            <input accept="image/jpeg, image/png" type="file" placeholder='Drag your images here, or browse' className="topt" />
+                            <div className='topt'>
+
+                                <div className="toptt">
+                                    Drag your images here, or <input type="file" placeholder='Browse' className='browse'                />
+                                </div>
+
+                                <div className="topt1">
+                                Supported:  JPG, JPEG, PNG
+                                </div>
+
+                            </div>
                         </div>
 
                         <button className="but-o">
@@ -438,7 +450,7 @@ const Home = () => {
 
                     <div className="last-second">
                         Copyright © 2020 Minimumlivingcost. All rights reserved
-                    </div>     
+                    </div>
                 </div>
 
             </div>

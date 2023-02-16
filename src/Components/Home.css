@@ -343,11 +343,24 @@
     border: 0.083rem solid #F4511E;
     border-style: dashed;
     border-radius: 0.42rem;
-    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem] flex justify-center
+    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem]  flex items-center flex-col
+}
+
+.toptt{
+    @apply font-medium text-[1.33rem] leading-[2rem] mt-[2.25rem]
+}
+
+.browse{
+    @apply text-[#f4511e]
 }
 
 .topio {
     @apply flex flex-col gap-[0.417rem] mt-[2.083rem] mb-[4.58rem]
+}
+
+.topt1{
+    color: rgba(0, 0, 0, 0.5);
+    @apply mt-[0.5rem] text-[1rem] leading-[1.5rem] font-medium
 }
 
 .but-o {
@@ -495,7 +508,7 @@
 
     .line {
         border: 0.5px solid #FFFFFF;
-        @apply w-[100%] h-[0rem] mt-[1.833rem] hidden
+        @apply w-[50%] h-[0rem] mt-[1.833rem] hidden
     }
 
 
@@ -540,7 +553,7 @@
     }
 
     .trans {
-        @apply h-[67.417rem]
+        @apply h-[67.417rem] hidden
     }
 
 
@@ -563,7 +576,7 @@
     }
 
     .row {
-        @apply flex flex-row
+        @apply grid grid-cols-2 
     }
 
 
@@ -626,4 +639,24 @@
         @apply w-[37rem] font-normal text-[1.5rem] leading-[2.67rem] mb-[3.33rem]
     }
 
+    .full {
+        @apply flex pr-[5.083rem] flex-col hidden   
+    }
+
+.lists{
+    @apply hidden       
+}
+
+.foot {
+    @apply h-[173.25rem] ml-[12.92rem] hidden
+}
+
+
+.quote {
+    @apply h-[173.25rem] ml-[12.92rem] hidden
+}
+
+.footer {
+    @apply h-[173.25rem] ml-[12.92rem] hidden
+}
 }
