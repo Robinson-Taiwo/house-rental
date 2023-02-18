@@ -28,8 +28,8 @@ const Home = () => {
             <section className="home">
 
                 <section className="nav">
-                    <div className="logo">
-                        <img src={logo} alt="" />
+                    <div  className="logot" >
+                        <img src={logo} className="logo"  alt="" />
                     </div>
 
                     <div className="links">
@@ -96,7 +96,7 @@ const Home = () => {
 
                     <div data-aos="fade-up" className="columns">
 
-                        <div className="row">
+                        
                             <div className="row1">
                                 <div className="square">
 
@@ -133,10 +133,9 @@ const Home = () => {
                                     take care of Landlord!
                                 </p>
                             </div>
-                        </div>
 
-                        <div className="row">
-                            <div className="row4">
+                     
+                            <div className="row1">
 
                                 <div className="square">
                                     <img src={dollar} alt="" />
@@ -159,7 +158,7 @@ const Home = () => {
                                     Save Money!
                                 </p>
                             </div>
-                            <div className="row3">
+                            <div className="row6">
                                 <div className="square">
 
                                     <img src={dollar} alt="" />
@@ -171,7 +170,6 @@ const Home = () => {
                                     you use !
                                 </p>
                             </div>
-                        </div>
 
 
                     </div>
