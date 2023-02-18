@@ -519,7 +519,7 @@
     }
 
     .text {
-        @apply font-bold text-[2.33rem] leading-[2.833rem] capitalize tracking-[-0.08rem] mt-[2rem] text-white w-[30.67rem] flex-wrap
+        @apply font-bold text-[1.33rem] leading-[2.833rem] capitalize tracking-[-0.08rem] mt-[2rem] text-white w-[30.67rem] flex-wrap
     }
 
     .inputs {
@@ -572,7 +572,7 @@
 
     .columns {
           grid-template-columns: repeat(2, 1fr); 
-        @apply mx-[1rem] grid mb-[7rem] 
+        @apply mx-[1rem] grid mb-[7rem]  hidden
     }
 
     /* .row {
