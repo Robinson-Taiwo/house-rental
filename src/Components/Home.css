@@ -486,7 +486,7 @@
         
         background: linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url(../assets/first-background.png);
         /* background-image: url(../assets/cleaning.png); */
-        @apply max-w-[63.91rem] flex  flex-col  h-[65.83rem] bg-cover  bg-center px-[2rem] pt-[2rem]
+        @apply max-w-[63.91rem] flex  flex-col  h-[58.83rem] bg-cover  bg-center px-[2rem] pt-[2rem]
     }
 
   
@@ -515,7 +515,7 @@
     }
 
     .map {
-        @apply w-[20rem] h-[20.33rem] mb-[1.75rem]
+        @apply w-[24rem] h-[20.33rem] mb-[1.75rem] mt-[2rem]
     }
 
     .text {
@@ -633,7 +633,7 @@
 
 
     .lists {
-        @apply bg-[#F5F5F5] h-[128.17rem] px-[1.71rem]
+        @apply bg-[#F5F5F5] h-auto px-[1.71rem]
     }
     
     .props {
@@ -660,60 +660,205 @@
     }
     
     .pages {
-        @apply flex flex-row
+        @apply flex flex-row mb-[1rem]
     }
     
     .page1 {
         border: 0.083rem solid #BDBDBD;
-        @apply h-[6.17rem] w-[7.25rem] bg-[#F3F3F3] flex justify-center items-center text-[1.33rem] font-bold text-[#BDBDBD] leading-[2rem]
+        @apply h-[5.17rem] w-[5.25rem] bg-[#F3F3F3] flex justify-center items-center text-[1rem] font-bold text-[#BDBDBD] leading-[2rem]
     }
+
+
+
     
     .page2 {
         border: 0.083rem solid #BDBDBD;
-        @apply h-[6.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
+        @apply h-[5.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
     }
     
     .page3 {
         border: 0.083rem solid #BDBDBD;
-        @apply h-[6.17rem] w-[3.92rem] bg-[#F4511E] flex justify-center items-center font-bold text-[#ffffff] leading-[2rem] text-[1.33rem]
+        @apply h-[5.17rem] w-[3.92rem] bg-[#F4511E] flex justify-center items-center font-bold text-[#ffffff] leading-[2rem] text-[1.33rem]
     }
     
     .page4 {
         border: 0.083rem solid #BDBDBD;
-        @apply h-[6.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
+        @apply h-[5.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
     }
     
     .page5 {
         border: 0.083rem solid #BDBDBD;
-        @apply h-[6.17rem] w-[7.25rem] bg-[#F3F3F3] flex justify-center items-center font-bold text-[#F4511E] text-[1.33rem] leading-[2rem]
+        @apply h-[5.17rem] w-[5.25rem] bg-[#F3F3F3] flex justify-center items-center font-bold text-[#F4511E] text-[1rem] leading-[2rem]
     }
 
     .search {
         @apply w-[50rem] mt-[22.63rem]
     }
-
-    .foot1 {
-        @apply flex flex-col gap-[5.67rem] mr-[16.97rem]
-    }
-
-    .lifestyle {
-        @apply font-extrabold text-[3.33rem] leading-[4.5rem] w-[37rem] mb-[1.33rem]
-    }
-
-    .desire {
-        @apply w-[37rem] font-normal text-[1.5rem] leading-[2.67rem] mb-[3.33rem]
-    }
-
+   
     .full {
         @apply flex  flex-col  
     }
 
+/* foot section in home.jsx */
+
+    .foot {
+        @apply h-auto ml-[1.92rem] 
+    }
+    
+    .hap1 {
+        background-image: url(../assets/leases.png);
+        @apply h-[11.8rem] w-[8.8rem] bg-cover bg-center bg-no-repeat pt-[1.5rem] font-semibold text-[1.6rem] leading-[1.2rem] text-[#ffffff] pl-[0.9rem] text-center
+    }
+    
+    .hap2 {
+        background-image: url(../assets/happiness.png);
+        @apply h-[13.5rem] w-[13.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[1rem] leading-[1.27rem] text-[#140303] pl-[0.2rem] text-center
+    }
+    
+    .hap3 {
+        background-image: url(../assets/cleaning.png);
+        @apply h-[11.75rem] w-[8.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[1.3rem] leading-[1.2rem] text-[#ffffff] flex justify-center pl-[1.2rem] text-center
+    }
+    
+    .hap4 {
+        background-image: url(../assets/roomate.png);
+        @apply h-[13.67rem] w-[12.7rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[1.2rem] leading-[1.27rem] text-[#ffffff] flex justify-center pl-[1.42rem]
+    }
+    
+    .clean {
+        @apply w-[24rem] flex flex-col gap-[1rem] mt-[9.17rem]
+    }
+    
+    .hapy {
+        @apply flex flex-row gap-[1rem] items-end w-[24rem]
+    }
+    
+    .hapx {
+        @apply flex flex-row gap-[1rem] w-[24rem]
+    }
+    
+    .hap4t {
+        @apply w-[16.58rem]
+    }
+    
+    .search {
+        @apply  mt-[1.63rem] w-[24rem]
+    }
+    
+    .foot1 {
+        @apply flex flex-col gap-[1.67rem] mr-[16.97rem]
+    }
+    
+    .lifestyle {
+        @apply font-extrabold text-[1.73rem] leading-[2.5rem] w-[24rem] mb-[1.33rem]
+    }
+    
+    .desire {
+        @apply  font-normal text-[1.2rem] leading-[1.67rem] mb-[2.33rem] w-[24rem]
+    } 
+    
+    .rooms {
+        @apply bg-[#F4511E] w-[12.42rem] h-[3.25rem] flex justify-center items-center rounded-[1.08rem] text-white font-semibold text-[1.2rem] leading-[1.27rem]
+    }
+    
 
 
-.foot {
-    @apply h-[173.25rem] ml-[12.92rem] hidden
-}
 
+
+
+    .confi {
+        @apply mt-[4.17rem] w-[24.1rem] font-medium leading-[1.66rem] text-[1.5rem]
+    }
+    
+    .confident {
+        @apply flex justify-center mb-[3.78rem]
+    }
+    
+    .add {
+        @apply flex justify-center pl-[0rem]
+    }
+    
+    .new {
+        background: #FFFFFF;
+        box-shadow: 0rem 0.25rem 5.25rem rgba(0, 0, 0, 0.15);
+        border-radius: 0.83rem;
+        @apply  h-[85.83rem] flex flex-col items-center mb-[9.17rem] mr-[1rem]
+    }
+    
+    .new-header {
+        @apply text-[#F4511E] text-[1.53rem] font-bold leading-[2.67rem] mt-[3.75rem] mb-[5.5rem]
+    }
+    
+    .details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        @apply gap-x-[0.08rem] gap-y-[2.083rem] mb-[2.08rem] 
+        }
+
+       
+    
+    .tops {
+        background: #F9F9F9;
+        border: 0.083rem solid #E6E6E6;
+        border-radius: 0.42rem;
+        @apply w-[26.5rem] h-[4.17rem] pl-[1.75rem] font-normal text-[1.17rem] leading-[2.33rem]
+    }
+    
+    #tops {
+        background: #F9F9F9;
+        border: 0.083rem solid #E6E6E6;
+        border-radius: 0.42rem;
+        @apply w-[22.5rem] h-[3.17rem] pl-[1.75rem]
+    }
+    
+    .topi {
+        @apply flex flex-col gap-[0.417rem]
+    }
+    
+    .asterik {
+        @apply text-[#F4511E]
+    }
+    
+    .topih {
+        @apply font-semibold text-[1.12rem] leading-[2rem]
+    }
+    
+    .topd {
+        background: #F9F9F9;
+        border: 0.083rem solid #E6E6E6;
+        border-radius: 0.42rem;
+        @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem] hidden
+    }
+    
+    .topt {
+        background: #F9F9F9;
+        border: 0.083rem solid #F4511E;
+        border-style: dashed;
+        border-radius: 0.42rem;
+        @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem]  flex items-center flex-col hidden
+    }
+    
+    .toptt{
+        @apply font-medium text-[1.33rem] leading-[2rem] mt-[2.25rem]
+    }
+    
+    .browse{
+        @apply text-[#f4511e]
+    }
+    
+    .topio {
+        @apply flex flex-col gap-[0.417rem] mt-[2.083rem] mb-[4.58rem]
+    }
+    
+    .topt1{
+        color: rgba(0, 0, 0, 0.5);
+        @apply mt-[0.5rem] text-[1rem] leading-[1.5rem] font-medium
+    }
+    
+    .but-o {
+        @apply bg-[#F4511E] rounded-[0.76rem] w-[42.75rem] h-[5.75rem] flex justify-center text-white items-center font-medium hidden leading-[2.08rem] text-[1.82rem]
+    }
+    
 
 .quote {
     @apply h-[173.25rem] ml-[12.92rem] hidden

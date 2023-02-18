@@ -270,17 +270,26 @@ const Home = () => {
 
                             <div className="topi">
                                 <p className="topih">Name <span className='asterik' >*</span> </p>
-                                <input type="text" className="tops" placeholder='Enter Name' />
+                                <input type="text" className="tops"
+                                id="tops" 
+                                
+                                placeholder='Enter Name' />
                             </div>
 
                             <div className="topi">
                                 <p className="topih">Address <span className='asterik' >*</span> </p>
-                                <input type="text" className="tops" placeholder='Enter Address' />
+                                <input type="text" className="tops"
+                                
+                                id="tops"
+                                
+                                placeholder='Enter Address' />
                             </div>
 
                             <div className="topi">
                                 <p className="topih">Unit Number <span className='asterik' >*</span> </p>
-                                <input type="text" className="tops" placeholder='Enter Unit' />
+                                <input type="text" className="tops" 
+                                id="tops"
+                                placeholder='Enter Unit' />
                             </div>
 
 
