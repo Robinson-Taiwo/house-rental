@@ -515,31 +515,31 @@
     }
 
     .map {
-        @apply w-[34rem] h-[28.33rem] mb-[1.75rem]
+        @apply w-[20rem] h-[20.33rem] mb-[1.75rem]
     }
 
     .text {
-        @apply font-bold text-[1.33rem] leading-[2.833rem] capitalize tracking-[-0.08rem] mt-[2rem] text-white w-[30.67rem] flex-wrap
+        @apply font-bold text-[1.5rem] leading-[2.833rem] capitalize tracking-[-0.08rem] mt-[2rem] text-white w-[20.67rem] flex-wrap
     }
 
     .inputs {
         border: 0.083rem solid rgba(0, 0, 0, 0.2);
         border-radius: 0.833rem;
-        @apply bg-white flex flex-row w-[25rem] h-[7.33rem] justify-center items-center
+        @apply bg-white flex flex-row w-[23rem] h-[6.33rem] justify-center items-center
     }
 
     #all {
         background: #F9F9F9;
         border: 0.083rem solid #E6E6E6;
         border-radius: 0.416rem 0rem 0rem 0.416rem;
-        @apply w-[7.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+        @apply w-[5.67rem] h-[4.83rem] text-[1rem] font-medium leading-[2.33rem]
     }
 
     #neighbour {
         background: #F9F9F9;
         border: 0.083rem solid #E6E6E6;
         border-radius: 0.416rem 0rem 0rem 0.416rem;
-        @apply w-[10.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+        @apply w-[9.67rem] h-[4.83rem] text-[1rem] font-medium leading-[2.33rem]
     }
 
     .search1 {
@@ -558,118 +558,134 @@
 
     .mini {
         font-family: 'Kumbh Sans', sans-serif;
-        @apply mt-[2.75rem] text-[2rem] leading-[2.33rem] font-extrabold capitalize text-[#18191F] pl-[rem] w-[27rem] ml-[0rem]
+        @apply mt-[2.75rem] text-[1.5rem] leading-[2.33rem] font-extrabold capitalize text-[#18191F] pl-[rem] w-[24rem] ml-[0rem]
     }
 
     .line2 {
         border: 0.25rem solid #F4511E;
-        @apply  h-[0rem] mb-[1.71rem] w-[12.083rem]
+        @apply  h-[0rem] mb-[1.71rem] w-[12.083rem] relative ml-[0rem]
     }
 
     .photo {
-        @apply ml-[0.917rem] h-[25rem]
+        @apply ml-[0.917rem] h-[20rem]
     }
 
     .columns {
           grid-template-columns: repeat(2, 1fr); 
-        @apply mx-[1rem] grid mb-[7rem]  hidden
+        @apply mx-[0rem] gap-x-[1rem] grid  gap-y-[1rem]
     }
 
     /* .row {
         @apply flex flex-col 
     } */
     .row1 {
-        @apply pr-[1.3rem]
+        @apply  w-[9rem]
     }
     
-    .row4 {
-        @apply  bg-[red]
-    }
+    /* .row4 {
+        @apply  
+    } */
     
     .row5 {
-        @apply pr-[1.67rem]
+        @apply w-[9rem]
     }
     
     .row2 {
-        @apply pr-[0rem] bg-[red]
+        @apply pr-[0rem] w-[9rem]
     }
 
     .row6 {
-        @apply  bg-[red] pr-[-60rem]
+        @apply  pr-[-60rem]
     }
 
     .rt1 {
-        @apply font-semibold text-[1.467rem] leading-[1.5rem] mt-[1.75rem] w-[13.25rem] h-[5.833rem]
+        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] flex-wrap w-[9.25rem] h-[4.833rem]
     }                   
     
     .rt2 {
-        @apply font-semibold text-[1.467rem] leading-[1.5rem] mt-[1.75rem] w-[13.25rem] h-[5.833rem]
+        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
     }
     
     .rt3 {
-        @apply font-semibold text-[1.467rem] leading-[1.5rem] mt-[1.75rem] w-[13.25rem] h-[5.833rem]
+        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
     }
     
     .rt4 {
-        @apply font-semibold text-[1.467rem] leading-[1.5rem] mt-[1.75rem] w-[13.25rem] h-[5.833rem]
+        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
     }
     
     .rt5 {
-        @apply font-semibold text-[1.467rem] leading-[1.5rem] mt-[1.75rem] w-[13.25rem] h-[5.833rem]
+        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
     }
     
     .rt6 {
-        @apply font-semibold text-[1.467rem] leading-[1.5rem] mt-[1.75rem] w-[12.25rem] h-[5.833rem]
+        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
     }
     
     .square {
         background: #FFFFFF;
         box-shadow: 0rem 1rem 1.58rem rgba(0, 0, 0, 0.15);
         border-radius: 0.833rem;
-        @apply h-[4.42rem] w-[4.42rem] flex justify-center items-center
+        @apply h-[3.42rem] w-[3.42rem] flex justify-center items-center
     }
 
 
 
 
-    .foot {
-        @apply h-[173.25rem] ml-[1.92rem]
+    .lists {
+        @apply bg-[#F5F5F5] h-[128.17rem] px-[1.71rem]
     }
-
-    .hap1 {
-        background-image: url(../assets/leases.png);
-        @apply h-[20.8rem] w-[15.8rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[3rem] text-center
+    
+    .props {
+        @apply flex flex-row justify-between
     }
-
-    .hap2 {
-        background-image: url(../assets/happiness.png);
-        @apply h-[15.5rem] w-[15.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[2rem] text-center
+    
+    .list {
+        @apply mt-[5.08rem] font-extrabold text-[2rem] leading-[2.33rem] capitalize
     }
-
-    .hap3 {
-        background-image: url(../assets/cleaning.png);
-        @apply h-[15.75rem] w-[11.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[1.5rem] text-center
+    
+    .orange {
+        box-shadow: 0px 20px 13px rgba(248, 90, 71, 0.035), 0rem 0.679rem 0.543rem rgba(248, 90, 71, 0.0274815), 0px 0.154rem 0.262rem rgba(248, 90, 71, 0.0168519);
+        border-radius: 0.417rem;
+        @apply mt-[5rem] bg-[#F4511E] w-[16.67rem] h-[5.417rem] flex justify-center items-center font-medium text-white text-[1.41rem] leading-[1.917rem] hidden
     }
-
-    .hap4 {
-        background-image: url(../assets/roomate.png);
-        @apply h-[22.67rem] w-[17.17rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[4.42rem] rounded-sm
+    
+    .tub {
+        /* grid-template-columns: repeat(3, 1fr); */
+        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[4.08rem] grid gap-4 grid-cols-1 mb-[7rem]
     }
-
-    .clean {
-        @apply w-[47rem] flex flex-col gap-[1.67rem] mt-[9.17rem]
+    
+    .switch {
+        @apply flex justify-center
     }
-
-    .hapy {
-        @apply flex flex-row gap-[0.67rem] items-end
+    
+    .pages {
+        @apply flex flex-row
     }
-
-    .hapx {
-        @apply flex flex-row gap-[0.67rem]
+    
+    .page1 {
+        border: 0.083rem solid #BDBDBD;
+        @apply h-[6.17rem] w-[7.25rem] bg-[#F3F3F3] flex justify-center items-center text-[1.33rem] font-bold text-[#BDBDBD] leading-[2rem]
     }
-
-    .hap4t {
-        @apply w-[16.58rem]
+    
+    .page2 {
+        border: 0.083rem solid #BDBDBD;
+        @apply h-[6.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
+    }
+    
+    .page3 {
+        border: 0.083rem solid #BDBDBD;
+        @apply h-[6.17rem] w-[3.92rem] bg-[#F4511E] flex justify-center items-center font-bold text-[#ffffff] leading-[2rem] text-[1.33rem]
+    }
+    
+    .page4 {
+        border: 0.083rem solid #BDBDBD;
+        @apply h-[6.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
+    }
+    
+    .page5 {
+        border: 0.083rem solid #BDBDBD;
+        @apply h-[6.17rem] w-[7.25rem] bg-[#F3F3F3] flex justify-center items-center font-bold text-[#F4511E] text-[1.33rem] leading-[2rem]
     }
 
     .search {
@@ -692,9 +708,7 @@
         @apply flex  flex-col  
     }
 
-.lists{
-    @apply hidden       
-}
+
 
 .foot {
     @apply h-[173.25rem] ml-[12.92rem] hidden

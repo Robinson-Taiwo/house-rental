@@ -138,7 +138,7 @@ const Home = () => {
                             <div className="row1">
 
                                 <div className="square">
-                                    <img src={dollar} alt="" />
+                                    <img     src={dollar} alt="" />
 
                                 </div>
 
