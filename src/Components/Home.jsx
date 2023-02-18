@@ -393,7 +393,7 @@ const Home = () => {
 
                 </div>
                 <div className="youtube">
-                    <img src={play} alt="" />
+                    <img className='play' src={play} alt="" />
                 </div>
 
             </div>
