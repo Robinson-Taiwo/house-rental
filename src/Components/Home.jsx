@@ -28,8 +28,8 @@ const Home = () => {
             <section className="home">
 
                 <section className="nav">
-                    <div  className="logot" >
-                        <img src={logo} className="logo"  alt="" />
+                    <div className="logot" >
+                        <img src={logo} className="logo" alt="" />
                     </div>
 
                     <div className="links">
@@ -46,11 +46,11 @@ const Home = () => {
 
                 <div className="header">
 
-                    <h1 className="text">
+                    <h1 data-aos="zoom-out-down" className="text">
                         The most affortable place to stay in the san franciso bay area
                     </h1>
 
-                    <div className="mapp">
+                    <div data-aos="zoom-out-up" className="mapp">
                         <img src={map} alt="map" className="map" />
 
 
@@ -96,80 +96,80 @@ const Home = () => {
 
                     <div data-aos="fade-up" className="columns">
 
-                        
-                            <div className="row1">
-                                <div className="square">
 
-                                    <img src={dollar} alt="" />
-                                </div>
+                        <div className="row1">
+                            <div className="square">
 
-
-                                <p data-aos="zoom-in" className="rt1">
-                                    Pay as Little
-                                    as possible!
-                                </p>
-
-                            </div>
-                            <div className="row2">
-                                <div className="square">
-
-                                    <img src={dollar} alt="" />
-                                </div>
-
-                                <p data-aos="zoom-in" className="rt2">
-                                    Enjoy wisdom
-                                    of community!
-                                </p>
-                            </div>
-                            <div className="row3">
-
-                                <div className="square">
-
-                                    <img src={dollar} alt="" />
-                                </div>
-
-                                <p data-aos="zoom-in" className="rt3">
-                                    Let's somebody else
-                                    take care of Landlord!
-                                </p>
+                                <img src={dollar} alt="" />
                             </div>
 
-                     
-                            <div className="row1">
 
-                                <div className="square">
-                                    <img     src={dollar} alt="" />
+                            <p data-aos="zoom-in" className="rt1">
+                                Pay as Little
+                                as possible!
+                            </p>
 
-                                </div>
+                        </div>
+                        <div className="row2">
+                            <div className="square">
 
-                                <p data-aos="zoom-in" className="rt4">
-                                    Enjoy peaceful
-                                    Environment!
-                                </p>
+                                <img src={dollar} alt="" />
                             </div>
-                            <div className="row5">
-                                <div className="square">
 
-                                    <img src={dollar} alt="" />
-                                </div>
+                            <p data-aos="zoom-in" className="rt2">
+                                Enjoy wisdom
+                                of community!
+                            </p>
+                        </div>
+                        <div className="row3">
 
-                                <p data-aos="zoom-in" className="rt5">
-                                    Stay Safe!
-                                    Save Money!
-                                </p>
+                            <div className="square">
+
+                                <img src={dollar} alt="" />
                             </div>
-                            <div className="row6">
-                                <div className="square">
 
-                                    <img src={dollar} alt="" />
-                                </div>
+                            <p data-aos="zoom-in" className="rt3">
+                                Let's somebody else
+                                take care of Landlord!
+                            </p>
+                        </div>
 
 
-                                <p data-aos="zoom-in" className="rt6">
-                                    Pay for what
-                                    you use !
-                                </p>
+                        <div className="row1">
+
+                            <div className="square">
+                                <img src={dollar} alt="" />
+
                             </div>
+
+                            <p data-aos="zoom-in" className="rt4">
+                                Enjoy peaceful
+                                Environment!
+                            </p>
+                        </div>
+                        <div className="row5">
+                            <div className="square">
+
+                                <img src={dollar} alt="" />
+                            </div>
+
+                            <p data-aos="zoom-in" className="rt5">
+                                Stay Safe!
+                                Save Money!
+                            </p>
+                        </div>
+                        <div className="row6">
+                            <div className="square">
+
+                                <img src={dollar} alt="" />
+                            </div>
+
+
+                            <p data-aos="zoom-in" className="rt6">
+                                Pay for what
+                                you use !
+                            </p>
+                        </div>
 
 
                     </div>
@@ -222,19 +222,19 @@ const Home = () => {
                     <div className="clean">
 
                         <div className="hapy">
-                            <div className="hap1"> Flexible Leases </div>
-                            <div className="hap2"> 7-Day Happiness Guaranteed</div>
+                            <div data-aos="zoom-in-up" className="hap1"> Flexible Leases </div>
+                            <div data-aos="zoom-in-up" className="hap2"> 7-Day Happiness Guaranteed</div>
                         </div>
 
                         <div className="hapx">
-                            <div className="hap3"> Monthly House Cleaning</div>
-                            <div className="hap4"> <div className="hap4t">Choose Your Own Roomate</div> </div>
+                            <div data-aos="zoom-out-up" className="hap3"> Monthly House Cleaning</div>
+                            <div data-aos="zoom-out-up" className="hap4"> <div className="hap4t">Choose Your Own Roomate</div> </div>
                         </div>
 
 
                     </div>
 
-                    <div className="search">
+                    <div data-aos="zoom-in-down" className="search">
                         <h1 className="lifestyle">
                             Flexibility and options to suit your lifestyle.
                         </h1>
@@ -251,7 +251,7 @@ const Home = () => {
 
                 <section className="confident">
 
-                    <div className="confi">
+                    <div data-aos="zoom-in" className="confi">
                         Your property with us and be Confident that Your Room will be Filled Out!
                     </div>
                 </section>
@@ -259,7 +259,7 @@ const Home = () => {
                 <section className="add">
 
 
-                    <div className="new">
+                    <div data-aos="fade-in" className="new">
 
 
                         <div className="new-header">
@@ -271,25 +271,25 @@ const Home = () => {
                             <div className="topi">
                                 <p className="topih">Name <span className='asterik' >*</span> </p>
                                 <input type="text" className="tops"
-                                id="tops" 
-                                
-                                placeholder='Enter Name' />
+                                    id="tops"
+
+                                    placeholder='Enter Name' />
                             </div>
 
                             <div className="topi">
                                 <p className="topih">Address <span className='asterik' >*</span> </p>
                                 <input type="text" className="tops"
-                                
-                                id="tops"
-                                
-                                placeholder='Enter Address' />
+
+                                    id="tops"
+
+                                    placeholder='Enter Address' />
                             </div>
 
                             <div className="topi">
                                 <p className="topih">Unit Number <span className='asterik' >*</span> </p>
-                                <input type="text" className="tops" 
-                                id="tops"
-                                placeholder='Enter Unit' />
+                                <input type="text" className="tops"
+                                    id="tops"
+                                    placeholder='Enter Unit' />
                             </div>
 
 
@@ -361,11 +361,11 @@ const Home = () => {
                             <div className='topt'>
 
                                 <div className="toptt">
-                                    Drag your images here, or <input type="file" placeholder='Browse' className='browse'                />
+                                    Drag your images here, or <input type="file" placeholder='Browse' className='browse' />
                                 </div>
 
                                 <div className="topt1">
-                                Supported:  JPG, JPEG, PNG
+                                    Supported:  JPG, JPEG, PNG
                                 </div>
 
                             </div>
@@ -387,13 +387,19 @@ const Home = () => {
                 <div className="lorem">
                     <img src={quote} className="punct" alt="" />
 
-                    <div className="ipsum">
+                    <div data-aos="zoom-in-up" className="ipsum">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel pellentesque est. Curabitur at odio sit amet libero vulputate efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa, faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus fringilla finibus.
                     </div>
 
                 </div>
                 <div className="youtube">
-                    <img className='play' src={play} alt="" />
+                    <iframe
+                        width="611" height="590"
+                        id='youtube' src="https://www.youtube.com/embed/HOfJp8IOmu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    {/* <iframe
+                        width="611" height="590"
+                        id='youtube1' src="https://www.youtube.com/embed/HOfJp8IOmu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
                 </div>
 
             </div>

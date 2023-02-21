@@ -870,9 +870,19 @@
     }
 
     .youtube {
-        background-image: url(../assets/youtube.png);
-        @apply w-[22.83rem] h-[49.17rem] ml-[1.8rem] bg-cover bg-center bg-no-repeat flex items-center justify-center mt-[25rem] mb-[2rem]
+        background-color: rgba(244, 81, 30, 0.07);
+        @apply w-[22.83rem] h-[49.17rem] ml-[1.8rem] bg-cover bg-center bg-no-repeat mt-[25rem] mb-[2rem]
     }
+
+    #youtube{
+        background-color: rgba(244, 81, 30, 0.07);
+        @apply w-[100%] h-[100%]  bg-cover bg-center bg-no-repeat flex items-center justify-center  
+    }
+
+    /* #youtube1{
+        background-color: rgba(244, 81, 30, 0.07);
+        @apply w-[22.83rem] h-[2.17rem] ml-[1.8rem] bg-cover bg-center bg-no-repeat flex items-center justify-center mt-[25rem] mb-[2rem] hidden
+    } */
 
     .punct {
         @apply mt-[3.17rem] ml-[1.67rem] w-[1.89rem] h-[1rem]
