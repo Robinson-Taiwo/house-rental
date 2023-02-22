@@ -633,7 +633,7 @@
 
 
     .lists {
-        @apply bg-[#F5F5F5] h-auto px-[1.71rem]
+        @apply bg-[#F5F5F5] h-auto px-[1.71rem] pb-[2rem]
     }
 
     .props {
@@ -652,11 +652,11 @@
 
     .tub {
         /* grid-template-columns: repeat(3, 1fr); */
-        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[4.08rem] grid gap-4 grid-cols-1 mb-[7rem]
+        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[2.08rem] grid gap-4 grid-cols-1 mb-[7rem]
     }
 
     .switch {
-        @apply flex justify-center
+        @apply flex justify-center hidden
     }
 
     .pages {
