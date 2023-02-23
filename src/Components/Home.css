@@ -184,6 +184,10 @@
     @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[5.08rem] grid gap-4 grid-cols-3 mb-[7rem]
 }
 
+.tub1{
+    @apply hidden
+}
+
 .switch {
     @apply flex justify-center
 }
@@ -463,6 +467,9 @@
     @apply text-[#0A142F] font-normal text-[1.17rem] leading-[1.42rem]
 }
 
+.caro{
+    @apply px-[3.5rem] bg-transparent flex   py-[2rem] gap-x-[3rem] mt-[3.75rem] hidden
+} 
 
 
 
@@ -652,8 +659,16 @@
 
     .tub {
         /* grid-template-columns: repeat(3, 1fr); */
-        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[2.08rem] grid gap-4 grid-cols-1 mb-[7rem]
+        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[2.08rem] grid gap-4 grid-cols-1 mb-[7rem]  hidden
     }
+
+    .caro{
+        @apply px-[3.5rem] bg-transparent flex   py-[2rem] gap-x-[3rem] mt-[3.75rem]
+    }
+
+    /* .tub1 {
+        @apply mt-[5.75rem]
+    } */
 
     .switch {
         @apply flex justify-center hidden
@@ -874,9 +889,9 @@
         @apply w-[22.83rem] h-[49.17rem] ml-[1.8rem] bg-cover bg-center bg-no-repeat mt-[25rem] mb-[2rem]
     }
 
-    #youtube{
+    #youtube {
         background-color: rgba(244, 81, 30, 0.07);
-        @apply w-[100%] h-[100%]  bg-cover bg-center bg-no-repeat flex items-center justify-center  
+        @apply w-[100%] h-[100%] bg-cover bg-center bg-no-repeat flex items-center justify-center
     }
 
     /* #youtube1{

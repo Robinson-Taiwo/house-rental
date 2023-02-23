@@ -18,6 +18,37 @@ import pinterest from "../assets/Pinterest.svg"
 import HomeCard from './HomeCard'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+
+const responsive = {
+    superLargeDesktop: {
+        // the naming can be any, depends on you.
+        breakpoint: { max: 4000, min: 3000 },
+        items: 5
+    },
+    desktop: {
+        breakpoint: { max: 3000, min: 1024 },
+        items: 3
+    },
+    tablet: {
+        breakpoint: { max: 1024, min: 464 },
+        items: 2
+    },
+    mobile: {
+        breakpoint: { max: 464, min: 0 },
+        items: 1
+    }
+};
+
+const prope = data.map((item, index) => {
+    return (
+
+        <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
+
+    )
+})
 
 
 const Home = () => {
@@ -189,7 +220,6 @@ const Home = () => {
                     </button>
                 </div>
 
-
                 <div className="tub">
                     {
                         data.map((item, index) => {
@@ -201,6 +231,21 @@ const Home = () => {
 
 
                 </div>
+
+                <div className="tub1">
+                <Carousel autoPlay={true} infinite={true} className='caro' showDots={true} responsive={responsive}>
+                    {
+                        data.map((item, index) => {
+                            return (
+                                <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
+                            )
+                        })
+                    }
+                </Carousel>
+                </div>
+
+               
+
 
                 <section className="switch">
                     <div className="pages">

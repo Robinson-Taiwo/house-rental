@@ -12,12 +12,13 @@ const HomeCard = (props) => {
     AOS.init({ duration: 2000 });
 
     return (
-        <div data-aos="flip-left"
-            data-aos-easing="ease-out-cubic" key={props.key} className='card' >
+        <div  key={props.key} className='card' >
             <img src={`/${props.image}.png`} alt="" className="pict" />
             <p className="card-text">
                 {props.name}
             </p>
+            {/* data-aos="flip-left"
+            data-aos-easing="ease-out-cubic" */}
 
             <p className="private">
                 private Room
