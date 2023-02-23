@@ -184,9 +184,9 @@
     @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[5.08rem] grid gap-4 grid-cols-3 mb-[7rem]
 }
 
-.tub1{
-    @apply hidden
-}
+/* .tub2 {
+    @apply 
+} */
 
 .switch {
     @apply flex justify-center
@@ -467,9 +467,9 @@
     @apply text-[#0A142F] font-normal text-[1.17rem] leading-[1.42rem]
 }
 
-.caro{
+/* .caro{
     @apply px-[3.5rem] bg-transparent flex   py-[2rem] gap-x-[3rem] mt-[3.75rem] hidden
-} 
+}  */
 
 
 
@@ -659,16 +659,16 @@
 
     .tub {
         /* grid-template-columns: repeat(3, 1fr); */
-        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[2.08rem] grid gap-4 grid-cols-1 mb-[7rem]  hidden
+        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[2.08rem] grid gap-4 grid-cols-1 mb-[7rem] hidden
     }
 
-    .caro{
-        @apply px-[3.5rem] bg-transparent flex   py-[2rem] gap-x-[3rem] mt-[3.75rem]
+    .caro {
+        @apply px-[3.5rem] bg-transparent flex py-[2rem] gap-x-[3rem] mt-[3.75rem]
     }
 
-    /* .tub1 {
-        @apply mt-[5.75rem]
-    } */
+    .tub2 {
+        @apply mt-[1rem]
+    }
 
     .switch {
         @apply flex justify-center hidden

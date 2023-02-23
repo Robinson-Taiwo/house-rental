@@ -220,6 +220,20 @@ const Home = () => {
                     </button>
                 </div>
 
+
+                <div className="tub2">
+                    <Carousel autoPlay={true} infinite={true} className='caro' showDots={true} responsive={responsive}>
+                        {
+                            data.map((item, index) => {
+                                return (
+                                    <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
+                                )
+                            })
+                        }
+                    </Carousel>
+                </div>
+
+
                 <div className="tub">
                     {
                         data.map((item, index) => {
@@ -232,19 +246,9 @@ const Home = () => {
 
                 </div>
 
-                <div className="tub1">
-                <Carousel autoPlay={true} infinite={true} className='caro' showDots={true} responsive={responsive}>
-                    {
-                        data.map((item, index) => {
-                            return (
-                                <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
-                            )
-                        })
-                    }
-                </Carousel>
-                </div>
 
-               
+
+
 
 
                 <section className="switch">
