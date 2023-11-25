@@ -2,6 +2,9 @@
 
 * {
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    /* overflow-x: hidden; */
 }
 
 .Home {
@@ -10,7 +13,7 @@
 
 .home {
     background: linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url(../assets/first-background.png);
-    @apply w-screen h-[65.83rem] bg-cover bg-center px-[10rem]
+    @apply w-screen desktop:h-[65.83rem] bg-cover bg-center desktop:px-[10rem] h-[100%]
 }
 
 .logo {
@@ -18,11 +21,11 @@
 }
 
 .nav {
-    @apply flex flex-row justify-between
+    @apply flex flex-row justify-center desktop:justify-between
 }
 
 .links {
-    @apply pt-[4.16rem] flex flex-row mr-[38.83rem]
+    @apply pt-[4.16rem] desktop:flex flex-row mr-[38.83rem] hidden
 }
 
 .link1 {
@@ -43,19 +46,19 @@
 
 .line {
     border: 0.5px solid #FFFFFF;
-    @apply w-[100%] h-[0rem] mt-[1.833rem]
+    @apply desktop:w-[100%] h-[0rem] mt-[1.833rem] w-[80%] ml-[3rem] desktop:ml-[0rem]
 }
 
 .text {
-    @apply font-bold text-[4.33rem] leading-[5.833rem] capitalize tracking-[-0.08rem] mt-[16.67rem] text-white max-w-[48.67rem] flex-wrap
+    @apply font-bold desktop:text-[4.33rem] desktop:leading-[5.833rem] leading-10 capitalize tracking-[-0.08rem] desktop:mt-[16.67rem] text-white desktop:max-w-[48.67rem] flex-wrap text-[1.9rem] w-[100%] mt-[2rem] text-center
 }
 
 .header {
-    @apply flex justify-between pr-[2.67rem] flex-row
+    @apply flex desktop:justify-between desktop:pr-[2.67rem] desktop:flex-row flex-col w-[100%] px-[1rem] items-center justify-center
 }
 
 .mapp {
-    @apply mt-[6.67rem]
+    @apply desktop:mt-[6.67rem] mt-[2rem] desktop:flex-row flex-col-reverse flex items-center justify-center
 }
 
 .map {
@@ -65,49 +68,49 @@
 .inputs {
     border: 0.083rem solid rgba(0, 0, 0, 0.2);
     border-radius: 0.833rem;
-    @apply bg-white flex flex-row w-[34rem] h-[7.33rem] justify-center items-center
+    @apply bg-white flex flex-row desktop:w-[34rem] desktop:h-[7.33rem] justify-center items-center h-[5rem] w-[80%]
 }
 
 #all {
     background: #F9F9F9;
     border: 0.083rem solid #E6E6E6;
     border-radius: 0.416rem 0rem 0rem 0.416rem;
-    @apply w-[10.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+    @apply desktop:w-[10.67rem] desktop:h-[4.83rem] h-[80%] desktop:text-[1.17rem] font-medium leading-[2.33rem] w-[30%] text-[0.9rem]
 }
 
 #neighbour {
     background: #F9F9F9;
     border: 0.083rem solid #E6E6E6;
     border-radius: 0.416rem 0rem 0rem 0.416rem;
-    @apply w-[14.67rem] h-[4.83rem] text-[1.17rem] font-medium leading-[2.33rem]
+    @apply desktop:w-[14.67rem] desktop:h-[4.83rem] desktop:text-[1.17rem] font-medium leading-[2.33rem] w-[50%] h-[80%] text-[0.9rem]
 }
 
 .search1 {
-    @apply w-[4.917rem] h-[4.83rem]
+    @apply desktop:w-[4.917rem] desktop:h-[4.83rem] w-[20%] h-[80%]
 }
 
 .trans {
-    @apply h-[67.417rem]
+    @apply desktop:h-[67.417rem] px-[10%]
 }
 
 
 .mini {
     font-family: 'Kumbh Sans', sans-serif;
-    @apply mt-[7.75rem] text-[3rem] leading-[5.33rem] font-extrabold capitalize text-[#18191F] ml-[10rem]
+    @apply desktop:mt-[7.75rem] desktop:text-[3rem] desktop:leading-[5.33rem] desktop:font-extrabold capitalize text-[#18191F] desktop:ml-[10rem] font-bold mt-[2rem] mx-[5%] text-[1.8rem] w-[100%]
 }
 
 .line2 {
     border: 0.25rem solid #F4511E;
-    @apply ml-[10rem] h-[0rem] mb-[1.71rem] w-[32.083rem]
+    @apply desktop:ml-[10rem] h-[0rem] mb-[1.71rem] w-[80%] desktop:w-[32.083rem] ml-[10%] border-[0.1rem]
 }
 
 .photo {
-    @apply ml-[6.917rem]
+    @apply desktop:ml-[6.917rem]
 }
 
 .columns {
-    grid-template-columns: repeat(3, 1fr);
-    @apply ml-[5.417rem] gap-[3.57rem] mt-[2.083rem] grid
+
+    @apply desktop:ml-[5.417rem] desktop:gap-[3.57rem] desktop:mt-[2.083rem] desktop:grid-cols-3 grid grid-cols-2 gap-[2rem]
 }
 
 .row {
@@ -115,43 +118,32 @@
 }
 
 .full {
-    @apply flex pr-[5.083rem] flex-row
+    @apply flex desktop:pr-[5.083rem] flex-col desktop:flex-row
 }
 
-/* .row1 {
-    @apply pr-[7.3rem]
-}
-
-.row4 {
-    @apply pr-[4.91rem]
-}
-
-.row5 {
-    @apply pr-[8.67rem]
-} */
 
 .rt1 {
-    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[13.25rem] h-[5.833rem]
+    @apply font-semibold desktop:text-[2.167rem] desktop:leading-[2.917rem] mt-[1.75rem] desktop:w-[13.25rem] desktop:h-[5.833rem] w-[100%] text-center
 }
 
 .rt2 {
-    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[15.83rem] h-[5.833rem] mr-[6.42rem]
+    @apply font-semibold desktop:text-[2.167rem] desktop:leading-[2.917rem] mt-[1.75rem] desktop:w-[15.83rem] desktop:h-[5.833rem] w-[100%] text-center
 }
 
 .rt3 {
-    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[24.42rem] h-[5.833rem]
+    @apply font-semibold desktop:text-[2.167rem] desktop:leading-[2.917rem] mt-[1.75rem] desktop:w-[24.42rem] desktop:h-[5.833rem] w-[100%] text-center
 }
 
 .rt4 {
-    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[15.64rem] h-[5.833rem]
+    @apply font-semibold desktop:text-[2.167rem] desktop:leading-[2.917rem] mt-[1.75rem] desktop:w-[15.64rem] desktop:h-[5.833rem] w-[100%] text-center
 }
 
 .rt5 {
-    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[13.58rem] h-[5.833rem]
+    @apply font-semibold desktop:text-[2.167rem] desktop:leading-[2.917rem] mt-[1.75rem] desktop:w-[13.58rem] desktop:h-[5.833rem] w-[100%]
 }
 
 .rt6 {
-    @apply font-semibold text-[2.167rem] leading-[2.917rem] mt-[1.75rem] w-[14.17rem] h-[5.833rem]
+    @apply font-semibold desktop:text-[2.167rem] desktop:leading-[2.917rem] mt-[1.75rem] desktop:w-[14.17rem] desktop:h-[5.833rem] w-[100%]
 }
 
 .square {
@@ -161,8 +153,12 @@
     @apply h-[6.42rem] w-[6.42rem] flex justify-center items-center
 }
 
+.row1, .row2, .row3, .row5, .row6 {
+    @apply flex flex-col items-center justify-center
+}
+
 .lists {
-    @apply bg-[#F5F5F5] h-[128.17rem] px-[10.71rem]
+    @apply bg-[#F5F5F5] desktop:h-[100%] desktop:px-[10.71rem] h-fit px-[5%] w-[100%]
 }
 
 .props {
@@ -170,26 +166,32 @@
 }
 
 .list {
-    @apply mt-[5.08rem] font-extrabold text-[3rem] leading-[5.33rem] capitalize
+    @apply mt-[5.08rem] font-extrabold desktop:text-[3rem] desktop:leading-[5.33rem] capitalize text-[2rem]
 }
 
 .orange {
     box-shadow: 0px 20px 13px rgba(248, 90, 71, 0.035), 0rem 0.679rem 0.543rem rgba(248, 90, 71, 0.0274815), 0px 0.154rem 0.262rem rgba(248, 90, 71, 0.0168519);
     border-radius: 0.417rem;
-    @apply mt-[5rem] bg-[#F4511E] w-[16.67rem] h-[5.417rem] flex justify-center items-center font-medium text-white text-[1.41rem] leading-[1.917rem]
+    @apply mt-[5rem] bg-[#F4511E] desktop:w-[16.67rem] desktop:h-[5.417rem] desktop:flex justify-center items-center font-medium text-white desktop:text-[1.41rem] desktop:leading-[1.917rem] h-[3rem] w-[9rem] hidden
 }
 
 .tub {
-    /* grid-template-columns: repeat(3, 1fr); */
-    @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[5.08rem] grid gap-4 grid-cols-3 mb-[7rem]
+    @apply gap-x-[2.77rem] mt-[5.75rem] desktop:gap-y-[5.08rem] desktop:grid gap-4 desktop:grid-cols-3 mb-[7rem] grid-cols-1 wide:gap-x-[7.77rem]
 }
 
-/* .tub2 {
-    @apply 
-} */
+.mtub {
+    @apply flex items-center justify-center w-[100%] pl-[3rem] desktop:pl-[0rem]
+}
+
+
+.caro {
+    @apply w-[100%]
+}
+
+
 
 .switch {
-    @apply flex justify-center
+    @apply desktop:flex justify-center hidden
 }
 
 .pages {
@@ -222,31 +224,31 @@
 }
 
 .foot {
-    @apply h-[173.25rem] ml-[12.92rem]
+    @apply desktop:h-[173.25rem] w-[100%] relative h-fit
 }
 
 .hap1 {
     background-image: url(../assets/leases.png);
-    @apply h-[27.8rem] w-[20.8rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[3rem] text-center
+    @apply h-[11.8rem] w-[8.8rem] desktop:h-[27.8rem] desktop:w-[20.8rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold desktop:text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[3rem] text-center text-[1.4rem]
 }
 
 .hap2 {
     background-image: url(../assets/happiness.png);
-    @apply h-[22.5rem] w-[22.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[2rem] text-center
+    @apply h-[13.5rem] w-[13.5rem] desktop:h-[22.5rem] desktop:w-[22.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold desktop:text-[2rem] leading-[1.67rem] text-[#ffffff] pl-[2rem] text-center text-[1.4rem]
 }
 
 .hap3 {
     background-image: url(../assets/cleaning.png);
-    @apply h-[23.75rem] w-[17.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[1.5rem] text-center
+    @apply h-[11.75rem] w-[8.67rem] desktop:h-[23.75rem] desktop:w-[17.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold desktop:text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[1.5rem] text-center text-[1.4rem]
 }
 
 .hap4 {
     background-image: url(../assets/roomate.png);
-    @apply h-[29.67rem] w-[28.17rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[2rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[4.42rem]
+    @apply h-[13.67rem] w-[12.7rem] desktop:h-[29.67rem] desktop:w-[28.17rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold desktop:text-[2rem] text-[1.4rem] leading-[1.67rem] text-[#ffffff] flex justify-center pl-[4.42rem]
 }
 
 .clean {
-    @apply w-[47rem] flex flex-col gap-[1.67rem] mt-[9.17rem]
+    @apply desktop:w-[47rem] w-[100%] flex flex-col gap-[1.67rem] desktop:mt-[9.17rem] justify-center items-center
 }
 
 .hapy {
@@ -262,27 +264,27 @@
 }
 
 .search {
-    @apply w-[50rem] mt-[22.63rem]
+    @apply desktop:w-[50rem] w-[100%] desktop:mt-[22.63rem] px-[5%] flex flex-col items-center justify-center
 }
 
 .foot1 {
-    @apply flex flex-row gap-[5.67rem] mr-[16.97rem]
+    @apply flex desktop:flex-row desktop:justify-evenly relative flex-col w-[100%]
 }
 
 .lifestyle {
-    @apply font-extrabold text-[3.33rem] leading-[4.5rem] w-[37rem] mb-[1.33rem]
+    @apply font-extrabold desktop:text-[3.33rem] text-[1.7rem] desktop:leading-[4.5rem] desktop:w-[37rem] mb-[1.33rem] w-[100%] text-center desktop:text-justify mt-[2rem] desktop:mt-[0rem]
 }
 
 .desire {
-    @apply w-[37rem] font-normal text-[1.5rem] leading-[2.67rem] mb-[3.33rem]
+    @apply desktop:w-[37rem] font-normal desktop:text-[1.5rem] leading-[2.67rem] mb-[3.33rem] text-center text-[1rem]
 }
 
 .rooms {
-    @apply bg-[#F4511E] w-[15.42rem] h-[5.25rem] flex justify-center items-center rounded-[1.08rem] text-white font-semibold text-[1.5rem] leading-[1.67rem]
+    @apply bg-[#F4511E] desktop:w-[15.42rem] desktop:h-[5.25rem] flex justify-center items-center rounded-[1.08rem] text-white font-semibold desktop:text-[1.5rem] leading-[1.67rem] w-[10rem] h-[4rem]
 }
 
 .confi {
-    @apply mt-[9.17rem] w-[72.1rem] font-medium leading-[2.66rem] text-[2rem]
+    @apply desktop:mt-[9.17rem] desktop:w-[72.1rem] font-medium desktop:leading-[2.66rem] desktop:text-[2rem] text-center desktop:text-start mt-[3rem] text-[1.5rem] w-[80%]
 }
 
 .confident {
@@ -290,24 +292,22 @@
 }
 
 .add {
-    @apply flex justify-center
+    @apply flex justify-center w-[100%]
 }
 
 .new {
     background: #FFFFFF;
     box-shadow: 0rem 0.25rem 5.25rem rgba(0, 0, 0, 0.15);
     border-radius: 0.83rem;
-    @apply w-[91.17rem] h-[85.83rem] flex flex-col items-center mb-[9.17rem]
+    @apply desktop:w-[91.17rem] desktop:h-[85.83rem] flex flex-col items-center desktop:mb-[9.17rem] w-[94%]
 }
 
 .new-header {
-    @apply text-[#F4511E] text-[2.33rem] font-bold leading-[2.67rem] mt-[3.75rem] mb-[5.5rem]
+    @apply text-[#F4511E] desktop:text-[2.33rem] font-bold desktop:leading-[2.67rem] mt-[3.75rem] desktop:mb-[5.5rem] text-[1.5rem] mb-[2rem]
 }
 
 .details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    @apply gap-x-[2.08rem] gap-y-[2.083rem] mb-[2.08rem]
+    @apply gap-x-[2.08rem] gap-y-[2.083rem] mb-[2.08rem] desktop:grid desktop:grid-cols-3 flex flex-col
 }
 
 .tops {
@@ -325,7 +325,7 @@
 }
 
 .topi {
-    @apply flex flex-col gap-[0.417rem]
+    @apply flex flex-col gap-[0.417rem] w-[100%] items-center justify-center
 }
 
 .asterik {
@@ -340,7 +340,7 @@
     background: #F9F9F9;
     border: 0.083rem solid #E6E6E6;
     border-radius: 0.42rem;
-    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem]
+    @apply desktop:w-[83.67rem] desktop:h-[12.58rem] pl-[1.75rem] w-[80%] h-[10rem]
 }
 
 .topt {
@@ -348,19 +348,23 @@
     border: 0.083rem solid #F4511E;
     border-style: dashed;
     border-radius: 0.42rem;
-    @apply w-[83.67rem] h-[12.58rem] pl-[1.75rem] flex items-center flex-col
+    @apply desktop:w-[83.67rem] desktop:h-[12.58rem] pl-[1.75rem] flex items-center flex-col w-[80%] h-[10rem] justify-center m-auto
 }
 
 .toptt {
-    @apply font-medium text-[1.33rem] leading-[2rem] mt-[2.25rem]
+    @apply font-medium text-[1.33rem] leading-[2rem] mt-[2.25rem] w-fit items-center justify-center flex flex-row m-auto
+}
+
+.toptt h3 {
+    @apply w-[100%]
 }
 
 .browse {
-    @apply text-[#f4511e]
+    @apply text-[#f4511e] w-[100%]
 }
 
 .topio {
-    @apply flex flex-col gap-[0.417rem] mt-[2.083rem] mb-[4.58rem]
+    @apply flex flex-col gap-[0.417rem] mt-[2.083rem] mb-[4.58rem] items-center justify-center
 }
 
 .topt1 {
@@ -369,47 +373,56 @@
 }
 
 .but-o {
-    @apply bg-[#F4511E] rounded-[0.76rem] w-[42.75rem] h-[5.75rem] flex justify-center text-white items-center font-medium leading-[2.08rem] text-[1.82rem]
+    @apply bg-[#F4511E] rounded-[0.76rem] desktop:w-[42.75rem] desktop:h-[5.75rem] flex justify-center text-white items-center font-medium desktop:leading-[2.08rem] desktop:text-[1.82rem] w-[50%] h-[4rem] text-[1.2rem] mb-[1rem]
 }
 
 .quote {
     background: rgba(244, 81, 30, 0.07);
 
-    @apply h-[49.67rem] flex flex-row mb-[9.17rem]
+    @apply desktop:h-[37.25rem] flex desktop:flex-row desktop:mb-[9.17rem] flex-col relative items-center justify-center h-[100%]
 }
 
 .lorem {
-    @apply flex flex-col
+    @apply flex flex-col w-[100%] desktop:items-center desktop:justify-center h-[100%]
 }
 
 .youtube {
     background-image: url(../assets/youtube.png);
-    @apply w-[100.83rem] h-[49.17rem] ml-[102.33rem] bg-cover bg-center bg-no-repeat flex items-center justify-center
+
+    @apply desktop:w-[39.875rem] desktop:h-[36.875rem] desktop:ml-[0rem] bg-cover bg-center bg-no-repeat flex items-center justify-center w-[20.83rem] h-[22.17rem]
+}
+
+.youtu {
+    @apply w-fit flex items-center justify-center mt-[2rem] mb-[3rem]
+}
+
+iframe {
+    @apply w-[100%] h-[100%]
 }
 
 .punct {
-    @apply mt-[8.17rem] ml-[6.67rem] w-[5.89rem] h-[5rem]
+    @apply desktop:mt-[8.17rem] desktop:ml-[6.67rem] desktop:w-[5.89rem] desktop:h-[5rem] h-[2rem] w-[2rem] ml-[1rem] top-[2rem] relative
 }
 
 .ipsum {
-    @apply w-[52.92rem] ml-[10.75rem] font-normal text-[1.75rem] leading-[3rem] absolute mt-[10.83rem]
+    @apply desktop:w-[52.92rem] font-normal desktop:text-[1.75rem] desktop:leading-[3rem] desktop:mt-[0rem] w-[80%] text-[1.2rem] ml-[3rem] desktop:ml-[0rem] desktop:flex desktop:items-center desktop:justify-center 
 }
 
 .footer {
-    @apply h-[45.25rem] flex items-center flex-col
+    @apply desktop:h-[45.25rem] flex items-center flex-col
 }
 
 .line3 {
     background: #F4511E;
-    @apply w-[104.83rem] h-[0.17rem]
+    @apply desktop:w-[104.83rem] h-[0.17rem] w-[100%]
 }
 
 .footer2 {
-    @apply flex flex-row gap-[31rem]
+    @apply flex desktop:flex-row desktop:gap-[31rem] gap-[2rem] flex-col items-center justify-center
 }
 
 .logo2 {
-    @apply bg-[#F4511E] mt-[8.58rem] h-[8rem]
+    @apply bg-[#F4511E] desktop:mt-[8.58rem] desktop:h-[8rem] h-[4rem] w-[50%] desktop:w-[100%]
 }
 
 .drive-state {
@@ -417,11 +430,11 @@
 }
 
 .drive {
-    @apply mt-[7.75rem]
+    @apply desktop:mt-[7.75rem] p-[5%] desktop:p-[0%]
 }
 
 .rest-second {
-    @apply flex flex-row gap-[10.16rem] mt-[1.833rem]
+    @apply flex desktop:flex-row desktop:gap-[10.16rem] mt-[1.833rem] flex-col p-[5%] desktop:p-[0%]
 }
 
 .call-state {
@@ -433,7 +446,7 @@
 }
 
 .media {
-    @apply flex flex-row gap-[2.5rem] mt-[4rem]
+    @apply flex flex-row desktop:gap-[2.5rem] desktop:mt-[4rem] mt-[2rem] gap-[1rem] px-[5%]
 }
 
 .sot {
@@ -446,15 +459,15 @@
     background: #7BB9FC;
     mix-blend-mode: normal;
     opacity: 0.2;
-    @apply w-[85.9rem] h-[0.083rem] mt-[6.92rem]
+    @apply desktop:w-[85.9rem] h-[0.083rem] desktop:mt-[6.92rem]
 }
 
 .last-footer {
-    @apply flex flex-row gap-[15rem] mt-[2rem]
+    @apply flex desktop:flex-row desktop:gap-[15rem] mt-[2rem] flex-col
 }
 
 .last {
-    @apply flex flex-row gap-[5rem]
+    @apply flex desktop:flex-row desktop:gap-[5rem] gap-[3rem] flex-col w-[100%] items-center justify-center
 }
 
 .last1 {
@@ -464,527 +477,5 @@
 .last-second {
     mix-blend-mode: normal;
     opacity: 0.5;
-    @apply text-[#0A142F] font-normal text-[1.17rem] leading-[1.42rem]
-}
-
-/* .caro{
-    @apply px-[3.5rem] bg-transparent flex   py-[2rem] gap-x-[3rem] mt-[3.75rem] hidden
-}  */
-
-
-
-
-
-
-
-
-
-
-
-/* CSS for mobile devices */
-@media (max-width: 767px) {
-
-
-    .Home {
-        @apply w-[100vw]
-    }
-
-    .home {
-
-        background: linear-gradient(200.44deg, rgba(0, 0, 0, 0.0001) 16.41%, rgba(0, 0, 0, 0.51) 77.16%), url(../assets/first-background.png);
-        /* background-image: url(../assets/cleaning.png); */
-        @apply max-w-[63.91rem] flex flex-col h-[58.83rem] bg-cover bg-center px-[2rem] pt-[2rem]
-    }
-
-
-
-    .nav {
-        @apply flex flex-row justify-between
-    }
-
-    .links {
-        @apply pt-[4.16rem] flex flex-row mr-[38.83rem] hidden
-    }
-
-
-    .line {
-        border: 0.5px solid #FFFFFF;
-        @apply w-[80%] h-[0rem] mt-[1.833rem]
-    }
-
-
-    .header {
-        @apply flex justify-center flex-col
-    }
-
-    .mapp {
-        @apply mt-[4.67rem] flex flex-col-reverse
-    }
-
-    .map {
-        @apply w-[24rem] h-[20.33rem] mb-[1.75rem] mt-[2rem]
-    }
-
-    .text {
-        @apply font-bold text-[1.5rem] leading-[2.833rem] capitalize tracking-[-0.08rem] mt-[2rem] text-white w-[20.67rem] flex-wrap
-    }
-
-    .inputs {
-        border: 0.083rem solid rgba(0, 0, 0, 0.2);
-        border-radius: 0.833rem;
-        @apply bg-white flex flex-row w-[23rem] h-[6.33rem] justify-center items-center
-    }
-
-    #all {
-        background: #F9F9F9;
-        border: 0.083rem solid #E6E6E6;
-        border-radius: 0.416rem 0rem 0rem 0.416rem;
-        @apply w-[5.67rem] h-[4.83rem] text-[1rem] font-medium leading-[2.33rem]
-    }
-
-    #neighbour {
-        background: #F9F9F9;
-        border: 0.083rem solid #E6E6E6;
-        border-radius: 0.416rem 0rem 0rem 0.416rem;
-        @apply w-[9.67rem] h-[4.83rem] text-[1rem] font-medium leading-[2.33rem]
-    }
-
-    .search1 {
-        @apply w-[4.917rem] h-[4.83rem]
-    }
-
-
-
-
-
-
-    .trans {
-        @apply px-[2rem] h-auto
-    }
-
-
-    .mini {
-        font-family: 'Kumbh Sans', sans-serif;
-        @apply mt-[2.75rem] text-[1.5rem] leading-[2.33rem] font-extrabold capitalize text-[#18191F] pl-[rem] w-[24rem] ml-[0rem]
-    }
-
-    .line2 {
-        border: 0.25rem solid #F4511E;
-        @apply h-[0rem] mb-[1.71rem] w-[12.083rem] relative ml-[0rem]
-    }
-
-    .photo {
-        @apply ml-[0.917rem] h-[20rem]
-    }
-
-    .columns {
-        grid-template-columns: repeat(2, 1fr);
-        @apply mx-[0rem] gap-x-[1rem] grid gap-y-[1rem]
-    }
-
-    /* .row {
-        @apply flex flex-col 
-    } */
-    .row1 {
-        @apply w-[9rem]
-    }
-
-    /* .row4 {
-        @apply  
-    } */
-
-    .row5 {
-        @apply w-[9rem]
-    }
-
-    .row2 {
-        @apply pr-[0rem] w-[9rem]
-    }
-
-    .row6 {
-        @apply pr-[-60rem]
-    }
-
-    .rt1 {
-        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] flex-wrap w-[9.25rem] h-[4.833rem]
-    }
-
-    .rt2 {
-        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
-    }
-
-    .rt3 {
-        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
-    }
-
-    .rt4 {
-        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
-    }
-
-    .rt5 {
-        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
-    }
-
-    .rt6 {
-        @apply font-semibold text-[1rem] leading-[1.5rem] mt-[1.75rem] w-[8.25rem] h-[4.833rem]
-    }
-
-    .square {
-        background: #FFFFFF;
-        box-shadow: 0rem 1rem 1.58rem rgba(0, 0, 0, 0.15);
-        border-radius: 0.833rem;
-        @apply h-[3.42rem] w-[3.42rem] flex justify-center items-center
-    }
-
-
-
-
-    .lists {
-        @apply bg-[#F5F5F5] h-auto px-[1.71rem] pb-[2rem]
-    }
-
-    .props {
-        @apply flex flex-row justify-between
-    }
-
-    .list {
-        @apply mt-[5.08rem] font-extrabold text-[2rem] leading-[2.33rem] capitalize
-    }
-
-    .orange {
-        box-shadow: 0px 20px 13px rgba(248, 90, 71, 0.035), 0rem 0.679rem 0.543rem rgba(248, 90, 71, 0.0274815), 0px 0.154rem 0.262rem rgba(248, 90, 71, 0.0168519);
-        border-radius: 0.417rem;
-        @apply mt-[5rem] bg-[#F4511E] w-[16.67rem] h-[5.417rem] flex justify-center items-center font-medium text-white text-[1.41rem] leading-[1.917rem] hidden
-    }
-
-    .tub {
-        /* grid-template-columns: repeat(3, 1fr); */
-        @apply gap-x-[2.77rem] mt-[5.75rem] gap-y-[2.08rem] grid gap-4 grid-cols-1 mb-[7rem] hidden
-    }
-
-    .caro {
-        @apply px-[3.5rem] bg-transparent flex py-[2rem] gap-x-[3rem] mt-[3.75rem]
-    }
-
-    .tub2 {
-        @apply mt-[1rem]
-    }
-
-    .switch {
-        @apply flex justify-center hidden
-    }
-
-    .pages {
-        @apply flex flex-row mb-[1rem]
-    }
-
-    .page1 {
-        border: 0.083rem solid #BDBDBD;
-        @apply h-[5.17rem] w-[5.25rem] bg-[#F3F3F3] flex justify-center items-center text-[1rem] font-bold text-[#BDBDBD] leading-[2rem]
-    }
-
-
-
-
-    .page2 {
-        border: 0.083rem solid #BDBDBD;
-        @apply h-[5.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
-    }
-
-    .page3 {
-        border: 0.083rem solid #BDBDBD;
-        @apply h-[5.17rem] w-[3.92rem] bg-[#F4511E] flex justify-center items-center font-bold text-[#ffffff] leading-[2rem] text-[1.33rem]
-    }
-
-    .page4 {
-        border: 0.083rem solid #BDBDBD;
-        @apply h-[5.17rem] w-[3.92rem] bg-[#ffffff] flex justify-center items-center font-bold text-[#F4511E] leading-[2rem] text-[1.33rem]
-    }
-
-    .page5 {
-        border: 0.083rem solid #BDBDBD;
-        @apply h-[5.17rem] w-[5.25rem] bg-[#F3F3F3] flex justify-center items-center font-bold text-[#F4511E] text-[1rem] leading-[2rem]
-    }
-
-    .search {
-        @apply w-[50rem] mt-[22.63rem]
-    }
-
-    .full {
-        @apply flex flex-col
-    }
-
-    /* foot section in home.jsx */
-
-    .foot {
-        @apply h-auto ml-[1.92rem]
-    }
-
-    .hap1 {
-        background-image: url(../assets/leases.png);
-        @apply h-[11.8rem] w-[8.8rem] bg-cover bg-center bg-no-repeat pt-[1.5rem] font-semibold text-[1.6rem] leading-[1.2rem] text-[#ffffff] pl-[0.9rem] text-center
-    }
-
-    .hap2 {
-        background-image: url(../assets/happiness.png);
-        @apply h-[13.5rem] w-[13.5rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[1rem] leading-[1.27rem] text-[#140303] pl-[0.2rem] text-center
-    }
-
-    .hap3 {
-        background-image: url(../assets/cleaning.png);
-        @apply h-[11.75rem] w-[8.67rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[1.3rem] leading-[1.2rem] text-[#ffffff] flex justify-center pl-[1.2rem] text-center
-    }
-
-    .hap4 {
-        background-image: url(../assets/roomate.png);
-        @apply h-[13.67rem] w-[12.7rem] bg-cover bg-center bg-no-repeat pt-[2.5rem] font-semibold text-[1.2rem] leading-[1.27rem] text-[#ffffff] flex justify-center pl-[1.42rem]
-    }
-
-    .clean {
-        @apply w-[24rem] flex flex-col gap-[1rem] mt-[9.17rem]
-    }
-
-    .hapy {
-        @apply flex flex-row gap-[1rem] items-end w-[24rem]
-    }
-
-    .hapx {
-        @apply flex flex-row gap-[1rem] w-[24rem]
-    }
-
-    .hap4t {
-        @apply w-[16.58rem]
-    }
-
-    .search {
-        @apply mt-[1.63rem] w-[24rem]
-    }
-
-    .foot1 {
-        @apply flex flex-col gap-[1.67rem] mr-[16.97rem]
-    }
-
-    .lifestyle {
-        @apply font-extrabold text-[1.73rem] leading-[2.5rem] w-[24rem] mb-[1.33rem]
-    }
-
-    .desire {
-        @apply font-normal text-[1.2rem] leading-[1.67rem] mb-[2.33rem] w-[24rem]
-    }
-
-    .rooms {
-        @apply bg-[#F4511E] w-[12.42rem] h-[3.25rem] flex justify-center items-center rounded-[1.08rem] text-white font-semibold text-[1.2rem] leading-[1.27rem]
-    }
-
-
-
-
-
-
-    .confi {
-        @apply mt-[4.17rem] w-[24.1rem] font-medium leading-[1.66rem] text-[1.5rem]
-    }
-
-    .confident {
-        @apply flex justify-center mb-[3.78rem]
-    }
-
-    .add {
-        @apply flex justify-center pl-[0rem]
-    }
-
-    .new {
-        background: #FFFFFF;
-        box-shadow: 0rem 0.25rem 5.25rem rgba(0, 0, 0, 0.15);
-        border-radius: 0.83rem;
-        @apply h-auto flex flex-col items-center mb-[2.17rem] mr-[2rem] p-[1rem]
-    }
-
-    .new-header {
-        @apply text-[#F4511E] text-[1.53rem] font-bold leading-[2.67rem] mt-[3.75rem] mb-[5.5rem]
-    }
-
-    .details {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        @apply gap-x-[0.08rem] gap-y-[2.083rem] mb-[2.08rem]
-    }
-
-
-
-    .tops {
-        background: #F9F9F9;
-        border: 0.083rem solid #E6E6E6;
-        border-radius: 0.42rem;
-        @apply w-[26.5rem] h-[4.17rem] pl-[1.75rem] font-normal text-[1.17rem] leading-[2.33rem]
-    }
-
-    #tops {
-        background: #F9F9F9;
-        border: 0.083rem solid #E6E6E6;
-        border-radius: 0.42rem;
-        @apply w-[22.5rem] h-[3.17rem] pl-[1.75rem]
-    }
-
-    .topi {
-        @apply flex flex-col gap-[0.417rem]
-    }
-
-    .asterik {
-        @apply text-[#F4511E]
-    }
-
-    .topih {
-        @apply font-semibold text-[1.12rem] leading-[2rem]
-    }
-
-    .topd {
-        background: #F9F9F9;
-        border: 0.083rem solid #E6E6E6;
-        border-radius: 0.42rem;
-        @apply w-[22.67rem] h-[9.58rem] pl-[1.75rem] pt-[4rem]
-    }
-
-    .topt {
-        background: #F9F9F9;
-        border: 0.083rem solid #F4511E;
-        border-style: dashed;
-        border-radius: 0.42rem;
-        @apply w-[22.67rem] h-[8.58rem] pl-[1.75rem] flex items-center flex-col
-    }
-
-    .toptt {
-        @apply font-medium text-[1.33rem] leading-[2rem] mt-[2.25rem]
-    }
-
-    .browse {
-        @apply text-[#f4511e] w-[20rem]
-    }
-
-    .topio {
-        @apply flex flex-col gap-[0.417rem] mt-[2.083rem] mb-[2.58rem]
-    }
-
-    .topt1 {
-        color: rgba(0, 0, 0, 0.5);
-        @apply mt-[0.5rem] text-[1rem] leading-[1.5rem] font-medium
-    }
-
-    .but-o {
-        @apply bg-[#F4511E] rounded-[0.76rem] w-[22.75rem] h-[4.75rem] flex justify-center text-white items-center font-medium leading-[2.08rem] text-[1.82rem]
-    }
-
-
-    .quote {
-        background: rgba(244, 81, 30, 0.07);
-        @apply h-[49.67rem] flex flex-col mb-[9.17rem]
-    }
-
-    .lorem {
-        @apply flex flex-col
-    }
-
-    .youtube {
-        background-color: rgba(244, 81, 30, 0.07);
-        @apply w-[22.83rem] h-[49.17rem] ml-[1.8rem] bg-cover bg-center bg-no-repeat mt-[25rem] mb-[2rem]
-    }
-
-    #youtube {
-        background-color: rgba(244, 81, 30, 0.07);
-        @apply w-[100%] h-[100%] bg-cover bg-center bg-no-repeat flex items-center justify-center
-    }
-
-    /* #youtube1{
-        background-color: rgba(244, 81, 30, 0.07);
-        @apply w-[22.83rem] h-[2.17rem] ml-[1.8rem] bg-cover bg-center bg-no-repeat flex items-center justify-center mt-[25rem] mb-[2rem] hidden
-    } */
-
-    .punct {
-        @apply mt-[3.17rem] ml-[1.67rem] w-[1.89rem] h-[1rem]
-    }
-
-    .play {
-        @apply h-[4rem]
-    }
-
-    .ipsum {
-        @apply w-[21.92rem] ml-[3rem] font-normal text-[1.5rem] leading-[2rem] absolute mt-[2.83rem]
-    }
-
-    .footer {
-        @apply h-[45.25rem] flex items-center flex-col pl-[2rem]
-    }
-
-    .line3 {
-        background: #F4511E;
-        @apply w-[22.83rem] h-[0.17rem]
-    }
-
-    .footer2 {
-        @apply flex flex-col gap-[2rem]
-    }
-
-    .logo2 {
-        @apply bg-[#F4511E] mt-[2.58rem] h-[8rem] w-[20rem] ml-[2rem]
-    }
-
-    .drive-state {
-        @apply flex flex-row gap-[1.75rem] font-normal text-[1.16rem] leading-[1.5rem]
-    }
-
-    .drive {
-        @apply mt-[0.75rem]
-    }
-
-    .rest-second {
-        @apply flex flex-row gap-[3.16rem] mt-[1.833rem]
-    }
-
-    .call-state {
-        @apply flex flex-row gap-[1.75rem] font-normal text-[1.16rem] leading-[1.5rem]
-    }
-
-    .fax-state {
-        @apply flex flex-row gap-[1.75rem] font-normal text-[1.16rem] leading-[1.5rem]
-    }
-
-    .media {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        @apply gap-[1rem]
-    }
-
-    .sot {
-        opacity: 0.5;
-        mix-blend-mode: normal;
-        @apply font-normal text-[1rem] leading-[1.5rem] text-[#0A142F]
-    }
-
-    .line4 {
-        background: #7BB9FC;
-        mix-blend-mode: normal;
-        opacity: 0.2;
-        @apply w-[22.9rem] h-[0.083rem] mt-[2.92rem]
-    }
-
-    .last-footer {
-        @apply flex flex-col gap-[2rem] mt-[2rem]
-    }
-
-    .last {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        @apply gap-[1rem]
-    }
-
-    .last1 {
-        @apply text-[#0A142F] font-normal text-[1.17rem] leading-[1.42rem]
-    }
-
-    .last-second {
-        mix-blend-mode: normal;
-        opacity: 0.5;
-        @apply text-[#0A142F] font-normal text-[1.17rem] leading-[1.42rem]
-    }
-
+    @apply text-[#0A142F] font-normal desktop:text-[1.17rem] leading-[1.42rem]
 }

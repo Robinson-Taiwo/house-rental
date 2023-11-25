@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../assets/app-logo.svg"
 import map from "../assets/map.png"
@@ -51,8 +51,51 @@ const prope = data.map((item, index) => {
 })
 
 
+
+
 const Home = () => {
-    AOS.init({ duration: 2000 });
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    const cards = [
+        "Card 1",
+        "Card 2",
+        "Card 3",
+        // Add more cards as needed
+    ];
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            nextCard();
+        }, 2000); // Adjust the autoplay interval as needed
+
+        return () => clearInterval(intervalId);
+    }, [currentIndex]);
+
+    const showCard = (index) => {
+        setCurrentIndex(index);
+    };
+
+    const nextCard = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    };
+
+    const prevCard = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + cards.length) % cards.length);
+    };
+
+    const updateDots = (index) => {
+        const dots = Array.from(document.querySelectorAll('.dot'));
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    };
+
+    const handleDotClick = (dotIndex) => {
+        setCurrentIndex(dotIndex);
+    };
+
+
+    AOS.init({ duration: 500 });
 
     return (
         <div className='Home'>
@@ -65,9 +108,9 @@ const Home = () => {
 
                     <div className="links">
                         <Link to="/" className='link1'>Home</Link>
-                        <Link to="/Landlord" className='link2'>Landlord</Link>
-                        <Link to="/Tenants" className='link3'>Tenants</Link>
-                        <Link to="/Contact" className='link4'>Contact us</Link>
+                        <Link to="/" className='link2'>Landlord</Link>
+                        <Link to="/" className='link3'>Tenants</Link>
+                        <Link to="/" className='link4'>Contact us</Link>
 
                     </div>
 
@@ -220,8 +263,8 @@ const Home = () => {
                     </button>
                 </div>
 
-
-                <div className="tub2">
+                {/* 
+                <div className="second-tub">
                     <Carousel autoPlay={true} infinite={true} className='caro' showDots={true} responsive={responsive}>
                         {
                             data.map((item, index) => {
@@ -231,20 +274,37 @@ const Home = () => {
                             })
                         }
                     </Carousel>
+                </div> */}
+
+
+
+                {/* {
+                    data.map((item, index) => {
+                        return (
+                            <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
+                        )
+                    })
+                } */}
+
+
+                <div className="mtub">
+
+                    <div className="tub">
+
+                        {
+                            data.map((item, index) => {
+                                return (
+
+                                    <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
+                                )
+                            })
+                        }
+
+
+                    </div>
                 </div>
 
 
-                <div className="tub">
-                    {
-                        data.map((item, index) => {
-                            return (
-                                <HomeCard image={item.Image} name={item.name} key={index} price={item.price} />
-                            )
-                        })
-                    }
-
-
-                </div>
 
 
 
@@ -308,7 +368,7 @@ const Home = () => {
                 <section className="add">
 
 
-                    <div data-aos="fade-in" className="new">
+                    <div className="new">
 
 
                         <div className="new-header">
@@ -317,7 +377,7 @@ const Home = () => {
 
                         <div className="details">
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500"   >
                                 <p className="topih">Name <span className='asterik' >*</span> </p>
                                 <input type="text" className="tops"
                                     id="tops"
@@ -325,7 +385,7 @@ const Home = () => {
                                     placeholder='Enter Name' />
                             </div>
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                                 <p className="topih">Address <span className='asterik' >*</span> </p>
                                 <input type="text" className="tops"
 
@@ -334,7 +394,7 @@ const Home = () => {
                                     placeholder='Enter Address' />
                             </div>
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                                 <p className="topih">Unit Number <span className='asterik' >*</span> </p>
                                 <input type="text" className="tops"
                                     id="tops"
@@ -342,7 +402,7 @@ const Home = () => {
                             </div>
 
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                                 <p className="topih">City <span className='asterik' >*</span> </p>
 
                                 <select name="All type" id="tops">
@@ -354,7 +414,7 @@ const Home = () => {
                             </div>
 
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                                 <p className="topih">State <span className='asterik' >*</span> </p>
 
                                 <select name="All type" id="tops">
@@ -366,7 +426,7 @@ const Home = () => {
                                 </select>
                             </div>
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                                 <p className="topih">Room Type <span className='asterik' >*</span> </p>
 
                                 <select name="All type" id="tops">
@@ -377,7 +437,7 @@ const Home = () => {
                                 </select>
                             </div>
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                                 <p className="topih">Price <span className='asterik' >*</span> </p>
 
                                 <select name="All type" id="tops">
@@ -388,7 +448,7 @@ const Home = () => {
                                 </select>
                             </div>
 
-                            <div className="topi">
+                            <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                                 <p className="topih">Room Type <span className='asterik' >*</span> </p>
 
                                 <select name="All type" id="tops">
@@ -400,7 +460,7 @@ const Home = () => {
                             </div>
 
                         </div>
-                        <div className="topi">
+                        <div className="topi" data-aos="fade-up" data-aos-duration="500" >
                             <p className="topih">Description <span className='asterik' >*</span> </p>
                             <textarea type="text" className="topd" placeholder='Enter Description ' />
                         </div>
@@ -410,7 +470,7 @@ const Home = () => {
                             <div className='topt'>
 
                                 <div className="toptt">
-                                    Drag your images here, or <input type="file" placeholder='Browse' className='browse' />
+                                    <h3>Drag your images here, or</h3> <input type="file" placeholder='Browse' className='browse' />
                                 </div>
 
                                 <div className="topt1">
@@ -441,15 +501,18 @@ const Home = () => {
                     </div>
 
                 </div>
-                <div className="youtube">
-                    <iframe
-                        width="611" height="590"
-                        id='youtube' src="https://www.youtube.com/embed/HOfJp8IOmu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-                    {/* <iframe
-                        width="611" height="590"
-                        id='youtube1' src="https://www.youtube.com/embed/HOfJp8IOmu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+                <div className="youtu">
+
+                    <div className="youtube">
+                        <iframe
+                            width="611" height="590"
+                            id='youtube' src="https://www.youtube.com/embed/HOfJp8IOmu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                    </div>
                 </div>
+
 
             </div>
 

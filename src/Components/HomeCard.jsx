@@ -12,42 +12,48 @@ const HomeCard = (props) => {
     AOS.init({ duration: 2000 });
 
     return (
-        <div  key={props.key} className='card' >
+        <div key={props.key} className='card' >
             <img src={`/${props.image}.png`} alt="" className="pict" />
-            <p className="card-text">
-                {props.name}
-            </p>
-            {/* data-aos="flip-left"
+
+            <div className="card-second">
+
+
+                <p className="card-text">
+                    {props.name}
+                </p>
+                {/* data-aos="flip-left"
             data-aos-easing="ease-out-cubic" */}
 
-            <p className="private">
-                private Room
-            </p>
+                <p className="private">
+                    private Room
+                </p>
 
-            <p className="price">
-                {props.price}
-            </p>
+                <p className="price">
+                    {props.price}
+                </p>
 
-            <div className="cardLine"></div>
+                <div className="cardLine"></div>
 
-            <div className="down">
-                <div className="bed">
-                    <img src={bed} className="ic" alt="" /> <span className='four' >4</span>
-                </div>
+                <div className="down">
+                    <div className="bed">
+                        <img src={bed} className="ic" alt="" /> <span className='four' >4</span>
+                    </div>
 
-                <div className="hline"></div>
+                    <div className="hline"></div>
 
-                <div className="desk">
-                    <img src={desk} className="ic" alt="" /> <span className='four'>4</span>
-                </div>
+                    <div className="desk">
+                        <img src={desk} className="ic" alt="" /> <span className='four'>4</span>
+                    </div>
 
-                <div className="hline"></div>
+                    <div className="hline"></div>
 
 
-                <div className="lad">
-                    <img src={ladder} className="ic" alt="" /> <span className='four' >4</span>
+                    <div className="lad">
+                        <img src={ladder} className="ic" alt="" /> <span className='four' >4</span>
+                    </div>
                 </div>
             </div>
+
 
         </div>
     )
